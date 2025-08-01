@@ -5,26 +5,26 @@ const quotesCalendar = [
     {
         "text": "The journey of a thousand miles begins with a single step.",
         "author": "Lao Tzu",
-        "scrambledAuthor": "uzt oal",
+        "scrambledAuthor": "aLo zuT",
         "scrambledWords": [
             {
                 "original": "journey",
-                "scrambled": "yenruoj",
+                "scrambled": "uernjoy",
                 "index": 1
             },
             {
                 "original": "thousand",
-                "scrambled": "dnasuoht",
+                "scrambled": "osnathdu",
                 "index": 4
             },
             {
                 "original": "begins",
-                "scrambled": "snigeb",
+                "scrambled": "sgineb",
                 "index": 6
             },
             {
                 "original": "step",
-                "scrambled": "pets",
+                "scrambled": "spet",
                 "index": 10
             }
         ],
@@ -33,26 +33,26 @@ const quotesCalendar = [
     {
         "text": "You must be the change you wish to see in the world.",
         "author": "Mahatma Gandhi",
-        "scrambledAuthor": "ihdnag amtaham",
+        "scrambledAuthor": "maaMaht Gdaihn",
         "scrambledWords": [
             {
                 "original": "change",
-                "scrambled": "egnahc",
+                "scrambled": "ahnceg",
                 "index": 4
             },
             {
                 "original": "wish",
-                "scrambled": "hsiw",
+                "scrambled": "ishw",
                 "index": 6
             },
             {
                 "original": "see",
-                "scrambled": "ees",
+                "scrambled": "ese",
                 "index": 8
             },
             {
                 "original": "world",
-                "scrambled": "dlrow",
+                "scrambled": "wodlr",
                 "index": 11
             }
         ],
@@ -61,26 +61,26 @@ const quotesCalendar = [
     {
         "text": "Happiness is not something ready made. It comes from your own actions.",
         "author": "Dalai Lama",
-        "scrambledAuthor": "dmaiaa lal",
+        "scrambledAuthor": "aailD amaL",
         "scrambledWords": [
             {
                 "original": "happiness",
-                "scrambled": "ssenippah",
+                "scrambled": "pseanihsp",
                 "index": 0
             },
             {
                 "original": "something",
-                "scrambled": "gnihtemos",
+                "scrambled": "mgithoens",
                 "index": 3
             },
             {
                 "original": "comes",
-                "scrambled": "semoc",
+                "scrambled": "mceos",
                 "index": 7
             },
             {
                 "original": "actions",
-                "scrambled": "snoitca",
+                "scrambled": "atoisnc",
                 "index": 11
             }
         ],
@@ -89,26 +89,26 @@ const quotesCalendar = [
     {
         "text": "Do what you can, with what you have, where you are.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "roeohTed veloeostR",
         "scrambledWords": [
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "thaw",
                 "index": 1
             },
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "twha",
                 "index": 1
             },
             {
                 "original": "where",
-                "scrambled": "erehw",
+                "scrambled": "rehwe",
                 "index": 8
             },
             {
                 "original": "are",
-                "scrambled": "era",
+                "scrambled": "ear",
                 "index": 10
             }
         ],
@@ -117,26 +117,26 @@ const quotesCalendar = [
     {
         "text": "Every moment is a fresh beginning.",
         "author": "T.S. Eliot",
-        "scrambledAuthor": "toile .s.t",
+        "scrambledAuthor": ".ST. itlEo",
         "scrambledWords": [
             {
                 "original": "every",
-                "scrambled": "yreve",
+                "scrambled": "vyere",
                 "index": 0
             },
             {
                 "original": "moment",
-                "scrambled": "tnemom",
+                "scrambled": "oetmnm",
                 "index": 1
             },
             {
                 "original": "fresh",
-                "scrambled": "hserf",
+                "scrambled": "efshr",
                 "index": 4
             },
             {
                 "original": "beginning",
-                "scrambled": "gninnigeb",
+                "scrambled": "ngeingbni",
                 "index": 5
             }
         ],
@@ -145,26 +145,26 @@ const quotesCalendar = [
     {
         "text": "The only limit to our realization of tomorrow will be our doubts of today.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "hroeeTdo eeoRslotv",
         "scrambledWords": [
             {
                 "original": "limit",
-                "scrambled": "timil",
+                "scrambled": "timli",
                 "index": 2
             },
             {
                 "original": "realization",
-                "scrambled": "noitazilaer",
+                "scrambled": "zatriaeilon",
                 "index": 5
             },
             {
                 "original": "doubts",
-                "scrambled": "tudsbo",
+                "scrambled": "dsubto",
                 "index": 11
             },
             {
                 "original": "today",
-                "scrambled": "yadot",
+                "scrambled": "dytoa",
                 "index": 13
             }
         ],
@@ -173,26 +173,26 @@ const quotesCalendar = [
     {
         "text": "To handle yourself, use your head; to handle others, use your heart.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "eeTodorh oetlseoRv",
         "scrambledWords": [
             {
                 "original": "handle",
-                "scrambled": "eldnah",
+                "scrambled": "lenahd",
                 "index": 1
             },
             {
                 "original": "yourself",
-                "scrambled": "flesruoy",
+                "scrambled": "sofyuelr",
                 "index": 2
             },
             {
                 "original": "handle",
-                "scrambled": "eldnah",
+                "scrambled": "hadlne",
                 "index": 1
             },
             {
                 "original": "heart",
-                "scrambled": "traeh",
+                "scrambled": "htrae",
                 "index": 11
             }
         ],
@@ -201,26 +201,26 @@ const quotesCalendar = [
     {
         "text": "The mind is everything. What you think you become.",
         "author": "Buddha",
-        "scrambledAuthor": "ahddub",
+        "scrambledAuthor": "auddBh",
         "scrambledWords": [
             {
                 "original": "mind",
-                "scrambled": "dnim",
+                "scrambled": "nmid",
                 "index": 1
             },
             {
                 "original": "everything",
-                "scrambled": "gnihtyreve",
+                "scrambled": "engvehrity",
                 "index": 3
             },
             {
                 "original": "think",
-                "scrambled": "kniht",
+                "scrambled": "inhkt",
                 "index": 6
             },
             {
                 "original": "become",
-                "scrambled": "cemebo",
+                "scrambled": "bcoeme",
                 "index": 8
             }
         ],
@@ -229,16 +229,16 @@ const quotesCalendar = [
     {
         "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
         "author": "Aristotle",
-        "scrambledAuthor": "eltotsira",
+        "scrambledAuthor": "tAtsioler",
         "scrambledWords": [
             {
                 "original": "repeatedly",
-                "scrambled": "eypltrdaee",
+                "scrambled": "elayetedrp",
                 "index": 4
             },
             {
                 "original": "excellence",
-                "scrambled": "cxleeecenl",
+                "scrambled": "celelcxene",
                 "index": 6
             },
             {
@@ -248,7 +248,7 @@ const quotesCalendar = [
             },
             {
                 "original": "habit",
-                "scrambled": "tibah",
+                "scrambled": "ibtha",
                 "index": 14
             }
         ],
@@ -257,26 +257,26 @@ const quotesCalendar = [
     {
         "text": "Keep your face always toward the sunshine and shadows will fall behind you.",
         "author": "Walt Whitman",
-        "scrambledAuthor": "namtihw tlaw",
+        "scrambledAuthor": "atWl namhWti",
         "scrambledWords": [
             {
                 "original": "face",
-                "scrambled": "ecaf",
+                "scrambled": "cefa",
                 "index": 2
             },
             {
                 "original": "always",
-                "scrambled": "syawla",
+                "scrambled": "lswaay",
                 "index": 3
             },
             {
                 "original": "sunshine",
-                "scrambled": "enihsnus",
+                "scrambled": "nnsuhsie",
                 "index": 6
             },
             {
                 "original": "behind",
-                "scrambled": "dniheb",
+                "scrambled": "idenhb",
                 "index": 11
             }
         ],
@@ -285,26 +285,26 @@ const quotesCalendar = [
     {
         "text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
         "author": "Ralph Waldo Emerson",
-        "scrambledAuthor": "nosreme odlaw hplar",
+        "scrambledAuthor": "Rhpla doaWl rnemsEo",
         "scrambledWords": [
             {
                 "original": "behind",
-                "scrambled": "dniheb",
+                "scrambled": "eihdbn",
                 "index": 2
             },
             {
                 "original": "before",
-                "scrambled": "erofeb",
+                "scrambled": "rbeoef",
                 "index": 7
             },
             {
                 "original": "matters",
-                "scrambled": "srettam",
+                "scrambled": "rmtaste",
                 "index": 11
             },
             {
                 "original": "within",
-                "scrambled": "nihtiw",
+                "scrambled": "tinwih",
                 "index": 16
             }
         ],
@@ -313,26 +313,26 @@ const quotesCalendar = [
     {
         "text": "The only way to make sense out of change is to plunge into it, move with it, and enjoy the dance.",
         "author": "Alan Watts",
-        "scrambledAuthor": "sttaw nala",
+        "scrambledAuthor": "alAn tsWat",
         "scrambledWords": [
             {
                 "original": "make",
-                "scrambled": "ekam",
+                "scrambled": "mkae",
                 "index": 4
             },
             {
                 "original": "change",
-                "scrambled": "egnahc",
+                "scrambled": "cegnah",
                 "index": 8
             },
             {
                 "original": "plunge",
-                "scrambled": "egnulp",
+                "scrambled": "uelpng",
                 "index": 11
             },
             {
                 "original": "enjoy",
-                "scrambled": "yojne",
+                "scrambled": "yojen",
                 "index": 18
             }
         ],
@@ -341,26 +341,26 @@ const quotesCalendar = [
     {
         "text": "Life is either a daring adventure or nothing at all.",
         "author": "Helen Keller",
-        "scrambledAuthor": "rellek neleh",
+        "scrambledAuthor": "eenHl elKrel",
         "scrambledWords": [
             {
                 "original": "life",
-                "scrambled": "efil",
+                "scrambled": "eifl",
                 "index": 0
             },
             {
                 "original": "daring",
-                "scrambled": "gnirad",
+                "scrambled": "nirdga",
                 "index": 4
             },
             {
                 "original": "adventure",
-                "scrambled": "erutnevda",
+                "scrambled": "aevdturne",
                 "index": 5
             },
             {
                 "original": "nothing",
-                "scrambled": "gnihton",
+                "scrambled": "ingnhto",
                 "index": 7
             }
         ],
@@ -369,26 +369,26 @@ const quotesCalendar = [
     {
         "text": "You miss 100 percent of the shots you don't take.",
         "author": "Wayne Gretzky",
-        "scrambledAuthor": "ykzterg enyaw",
+        "scrambledAuthor": "aneyW zGyrekt",
         "scrambledWords": [
             {
                 "original": "miss",
-                "scrambled": "ssim",
+                "scrambled": "smsi",
                 "index": 1
             },
             {
                 "original": "percent",
-                "scrambled": "tnecrep",
+                "scrambled": "pctenre",
                 "index": 3
             },
             {
                 "original": "shots",
-                "scrambled": "stohs",
+                "scrambled": "ossht",
                 "index": 6
             },
             {
                 "original": "take",
-                "scrambled": "ekat",
+                "scrambled": "teka",
                 "index": 9
             }
         ],
@@ -397,26 +397,26 @@ const quotesCalendar = [
     {
         "text": "The greatest wealth is to live content with little.",
         "author": "Plato",
-        "scrambledAuthor": "otalp",
+        "scrambledAuthor": "aPotl",
         "scrambledWords": [
             {
                 "original": "greatest",
-                "scrambled": "tsetaerg",
+                "scrambled": "tetgrsea",
                 "index": 1
             },
             {
                 "original": "wealth",
-                "scrambled": "htlaew",
+                "scrambled": "thweal",
                 "index": 2
             },
             {
                 "original": "content",
-                "scrambled": "etnonct",
+                "scrambled": "tenncot",
                 "index": 6
             },
             {
                 "original": "little",
-                "scrambled": "elttil",
+                "scrambled": "tiletl",
                 "index": 8
             }
         ],
@@ -425,26 +425,26 @@ const quotesCalendar = [
     {
         "text": "Success is to be measured not by wealth, but by the legacy you leave behind.",
         "author": "Unknown",
-        "scrambledAuthor": "nwonknu",
+        "scrambledAuthor": "wUnknon",
         "scrambledWords": [
             {
                 "original": "success",
-                "scrambled": "sseccus",
+                "scrambled": "scsscue",
                 "index": 0
             },
             {
                 "original": "measured",
-                "scrambled": "derusaem",
+                "scrambled": "suerdema",
                 "index": 4
             },
             {
                 "original": "wealth",
-                "scrambled": "htlaew",
+                "scrambled": "lewaht",
                 "index": 7
             },
             {
                 "original": "legacy",
-                "scrambled": "ycagel",
+                "scrambled": "gyaecl",
                 "index": 11
             }
         ],
@@ -453,16 +453,16 @@ const quotesCalendar = [
     {
         "text": "The purpose of our lives is to be happy.",
         "author": "Dalai Lama",
-        "scrambledAuthor": "aadailam l",
+        "scrambledAuthor": "aDali amaL",
         "scrambledWords": [
             {
                 "original": "purpose",
-                "scrambled": "esoprup",
+                "scrambled": "psepuro",
                 "index": 1
             },
             {
                 "original": "lives",
-                "scrambled": "sevil",
+                "scrambled": "vsile",
                 "index": 4
             },
             {
@@ -472,7 +472,7 @@ const quotesCalendar = [
             },
             {
                 "original": "happy",
-                "scrambled": "yppah",
+                "scrambled": "aphyp",
                 "index": 8
             }
         ],
@@ -481,26 +481,26 @@ const quotesCalendar = [
     {
         "text": "Change your thoughts and you change your world.",
         "author": "Norman Vincent Peale",
-        "scrambledAuthor": "elaep tnecniv namron",
+        "scrambledAuthor": "mNnrao inctVen aelPe",
         "scrambledWords": [
             {
                 "original": "change",
-                "scrambled": "egnahc",
+                "scrambled": "aeghnc",
                 "index": 0
             },
             {
                 "original": "thoughts",
-                "scrambled": "sthguoht",
+                "scrambled": "htgosuth",
                 "index": 2
             },
             {
                 "original": "change",
-                "scrambled": "egnahc",
+                "scrambled": "nagech",
                 "index": 0
             },
             {
                 "original": "world",
-                "scrambled": "dlrow",
+                "scrambled": "lrowd",
                 "index": 7
             }
         ],
@@ -509,26 +509,26 @@ const quotesCalendar = [
     {
         "text": "The only person you are destined to become is the person you decide to be.",
         "author": "Ralph Waldo Emerson",
-        "scrambledAuthor": "nosreme odlaw hplar",
+        "scrambledAuthor": "alRph ladWo esnoEmr",
         "scrambledWords": [
             {
                 "original": "person",
-                "scrambled": "nosrep",
+                "scrambled": "sroenp",
                 "index": 2
             },
             {
                 "original": "destined",
-                "scrambled": "denitsed",
+                "scrambled": "eeddnits",
                 "index": 5
             },
             {
                 "original": "become",
-                "scrambled": "mbeeoc",
+                "scrambled": "comeeb",
                 "index": 7
             },
             {
                 "original": "decide",
-                "scrambled": "ediced",
+                "scrambled": "edecid",
                 "index": 12
             }
         ],
@@ -537,26 +537,26 @@ const quotesCalendar = [
     {
         "text": "It is never too late to be what you might have been.",
         "author": "T.S. Eliot",
-        "scrambledAuthor": "toile .s.t",
+        "scrambledAuthor": "ST.. oilEt",
         "scrambledWords": [
             {
                 "original": "never",
-                "scrambled": "reven",
+                "scrambled": "veren",
                 "index": 2
             },
             {
                 "original": "late",
-                "scrambled": "etal",
+                "scrambled": "eatl",
                 "index": 4
             },
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "ahtw",
                 "index": 7
             },
             {
                 "original": "been",
-                "scrambled": "neeb",
+                "scrambled": "eenb",
                 "index": 11
             }
         ],
@@ -565,26 +565,26 @@ const quotesCalendar = [
     {
         "text": "You cannot shake hands with a clenched fist.",
         "author": "Mahatma Gandhi",
-        "scrambledAuthor": "ihdnag amtaham",
+        "scrambledAuthor": "ataMhma anidGh",
         "scrambledWords": [
             {
                 "original": "cannot",
-                "scrambled": "tonnac",
+                "scrambled": "nnoatc",
                 "index": 1
             },
             {
                 "original": "shake",
-                "scrambled": "ekahs",
+                "scrambled": "kseah",
                 "index": 2
             },
             {
                 "original": "clenched",
-                "scrambled": "dehcnelc",
+                "scrambled": "cenlcdeh",
                 "index": 6
             },
             {
                 "original": "fist",
-                "scrambled": "tsif",
+                "scrambled": "tisf",
                 "index": 7
             }
         ],
@@ -593,26 +593,26 @@ const quotesCalendar = [
     {
         "text": "The secret of getting ahead is getting started.",
         "author": "Mark Twain",
-        "scrambledAuthor": "niawt kram",
+        "scrambledAuthor": "aMkr awnTi",
         "scrambledWords": [
             {
                 "original": "secret",
-                "scrambled": "terces",
+                "scrambled": "ctrees",
                 "index": 1
             },
             {
                 "original": "getting",
-                "scrambled": "gnitteg",
+                "scrambled": "ttiengg",
                 "index": 3
             },
             {
                 "original": "ahead",
-                "scrambled": "daeha",
+                "scrambled": "aeahd",
                 "index": 4
             },
             {
                 "original": "started",
-                "scrambled": "detrats",
+                "scrambled": "etrsatd",
                 "index": 7
             }
         ],
@@ -621,16 +621,16 @@ const quotesCalendar = [
     {
         "text": "What we think, we become.",
         "author": "Buddha",
-        "scrambledAuthor": "ahddub",
+        "scrambledAuthor": "auddhB",
         "scrambledWords": [
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "hawt",
                 "index": 0
             },
             {
                 "original": "think",
-                "scrambled": "kniht",
+                "scrambled": "inthk",
                 "index": 2
             },
             {
@@ -640,7 +640,7 @@ const quotesCalendar = [
             },
             {
                 "original": "become",
-                "scrambled": "cebmoe",
+                "scrambled": "eemcbo",
                 "index": 4
             }
         ],
@@ -649,26 +649,26 @@ const quotesCalendar = [
     {
         "text": "A goal is a dream with a deadline.",
         "author": "Napoleon Hill",
-        "scrambledAuthor": "llih noelopan",
+        "scrambledAuthor": "eapnNloo lilH",
         "scrambledWords": [
             {
                 "original": "goal",
-                "scrambled": "laog",
+                "scrambled": "lgoa",
                 "index": 1
             },
             {
                 "original": "dream",
-                "scrambled": "maerd",
+                "scrambled": "rmdae",
                 "index": 4
             },
             {
                 "original": "with",
-                "scrambled": "htiw",
+                "scrambled": "iwht",
                 "index": 5
             },
             {
                 "original": "deadline",
-                "scrambled": "enildaed",
+                "scrambled": "nldieead",
                 "index": 7
             }
         ],
@@ -677,16 +677,16 @@ const quotesCalendar = [
     {
         "text": "Act as if what you do makes a difference. It does.",
         "author": "William James",
-        "scrambledAuthor": "semaj mailliw",
+        "scrambledAuthor": "iimallW eamsJ",
         "scrambledWords": [
             {
                 "original": "act",
-                "scrambled": "tca",
+                "scrambled": "cta",
                 "index": 0
             },
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "hwat",
                 "index": 3
             },
             {
@@ -696,7 +696,7 @@ const quotesCalendar = [
             },
             {
                 "original": "difference",
-                "scrambled": "ecnereffid",
+                "scrambled": "ndficfeere",
                 "index": 8
             }
         ],
@@ -705,26 +705,26 @@ const quotesCalendar = [
     {
         "text": "The best preparation for tomorrow is doing your best today.",
         "author": "Jesse Jackson",
-        "scrambledAuthor": "noskcaj essej",
+        "scrambledAuthor": "Jeses asJckno",
         "scrambledWords": [
             {
                 "original": "best",
-                "scrambled": "tseb",
+                "scrambled": "stbe",
                 "index": 1
             },
             {
                 "original": "preparation",
-                "scrambled": "noitaraperp",
+                "scrambled": "eraptpnrioa",
                 "index": 2
             },
             {
                 "original": "tomorrow",
-                "scrambled": "worromot",
+                "scrambled": "oowmrrto",
                 "index": 4
             },
             {
                 "original": "today",
-                "scrambled": "yadot",
+                "scrambled": "toady",
                 "index": 9
             }
         ],
@@ -733,11 +733,11 @@ const quotesCalendar = [
     {
         "text": "You are never too old to set another goal or to dream a new dream.",
         "author": "C.S. Lewis",
-        "scrambledAuthor": "siwel .s.c",
+        "scrambledAuthor": "CS.. Liwse",
         "scrambledWords": [
             {
                 "original": "never",
-                "scrambled": "reven",
+                "scrambled": "eenvr",
                 "index": 2
             },
             {
@@ -747,7 +747,7 @@ const quotesCalendar = [
             },
             {
                 "original": "goal",
-                "scrambled": "laog",
+                "scrambled": "algo",
                 "index": 8
             },
             {
@@ -761,26 +761,26 @@ const quotesCalendar = [
     {
         "text": "The only true wisdom is in knowing you know nothing.",
         "author": "Socrates",
-        "scrambledAuthor": "asrtceso",
+        "scrambledAuthor": "coaetSsr",
         "scrambledWords": [
             {
                 "original": "true",
-                "scrambled": "eurt",
+                "scrambled": "erut",
                 "index": 2
             },
             {
                 "original": "wisdom",
-                "scrambled": "modsiw",
+                "scrambled": "sdwmio",
                 "index": 3
             },
             {
                 "original": "knowing",
-                "scrambled": "gniknow",
+                "scrambled": "giwnnko",
                 "index": 6
             },
             {
                 "original": "nothing",
-                "scrambled": "gnihton",
+                "scrambled": "tnnogih",
                 "index": 9
             }
         ],
@@ -789,16 +789,16 @@ const quotesCalendar = [
     {
         "text": "It is not the mountain we conquer, but ourselves.",
         "author": "Edmund Hillary",
-        "scrambledAuthor": "yrallih dnumde",
+        "scrambledAuthor": "nuEdmd Hyliral",
         "scrambledWords": [
             {
                 "original": "mountain",
-                "scrambled": "niatnuom",
+                "scrambled": "tunoinam",
                 "index": 4
             },
             {
                 "original": "conquer",
-                "scrambled": "reuqnoc",
+                "scrambled": "qneuorc",
                 "index": 6
             },
             {
@@ -808,7 +808,7 @@ const quotesCalendar = [
             },
             {
                 "original": "ourselves",
-                "scrambled": "sevlesruo",
+                "scrambled": "vssuoeerl",
                 "index": 8
             }
         ],
@@ -817,26 +817,26 @@ const quotesCalendar = [
     {
         "text": "Life is short, and it is up to you to make it sweet.",
         "author": "Sarah Bernhardt",
-        "scrambledAuthor": "tdrahnreb haras",
+        "scrambledAuthor": "aarSh edtBnhrar",
         "scrambledWords": [
             {
                 "original": "life",
-                "scrambled": "efil",
+                "scrambled": "lefi",
                 "index": 0
             },
             {
                 "original": "short",
-                "scrambled": "trohs",
+                "scrambled": "shrot",
                 "index": 2
             },
             {
                 "original": "make",
-                "scrambled": "ekam",
+                "scrambled": "aemk",
                 "index": 10
             },
             {
                 "original": "sweet",
-                "scrambled": "teews",
+                "scrambled": "estew",
                 "index": 12
             }
         ],
@@ -845,26 +845,26 @@ const quotesCalendar = [
     {
         "text": "The way to get started is to quit talking and begin doing.",
         "author": "Walt Disney",
-        "scrambledAuthor": "yensid tlaw",
+        "scrambledAuthor": "taWl syneiD",
         "scrambledWords": [
             {
                 "original": "started",
-                "scrambled": "detrats",
+                "scrambled": "etarstd",
                 "index": 4
             },
             {
                 "original": "quit",
-                "scrambled": "tiuq",
+                "scrambled": "tiqu",
                 "index": 7
             },
             {
                 "original": "talking",
-                "scrambled": "gniklat",
+                "scrambled": "natkilg",
                 "index": 8
             },
             {
                 "original": "begin",
-                "scrambled": "nigeb",
+                "scrambled": "ebgin",
                 "index": 10
             }
         ],
@@ -873,26 +873,26 @@ const quotesCalendar = [
     {
         "text": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
         "author": "James Cameron",
-        "scrambledAuthor": "noremac semaj",
+        "scrambledAuthor": "Jsema eronaCm",
         "scrambledWords": [
             {
                 "original": "goals",
-                "scrambled": "slaog",
+                "scrambled": "gsola",
                 "index": 4
             },
             {
                 "original": "ridiculously",
-                "scrambled": "ylsuolucidri",
+                "scrambled": "urlluyicdiso",
                 "index": 5
             },
             {
                 "original": "failure",
-                "scrambled": "eruliaf",
+                "scrambled": "aferuli",
                 "index": 10
             },
             {
                 "original": "success",
-                "scrambled": "sseccus",
+                "scrambled": "suescsc",
                 "index": 17
             }
         ],
@@ -901,26 +901,26 @@ const quotesCalendar = [
     {
         "text": "If you look at what you have in life, you'll always have more.",
         "author": "Oprah Winfrey",
-        "scrambledAuthor": "yerfniw harpo",
+        "scrambledAuthor": "apOrh Wenyrfi",
         "scrambledWords": [
             {
                 "original": "look",
-                "scrambled": "kool",
+                "scrambled": "okol",
                 "index": 2
             },
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "athw",
                 "index": 4
             },
             {
                 "original": "life",
-                "scrambled": "efil",
+                "scrambled": "ifle",
                 "index": 8
             },
             {
                 "original": "always",
-                "scrambled": "syawla",
+                "scrambled": "wsaayl",
                 "index": 10
             }
         ],
@@ -929,26 +929,26 @@ const quotesCalendar = [
     {
         "text": "If life were predictable it would cease to be life, and be without flavor.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "oreTehdo etoeRlosv",
         "scrambledWords": [
             {
                 "original": "life",
-                "scrambled": "efil",
+                "scrambled": "lfei",
                 "index": 1
             },
             {
                 "original": "predictable",
-                "scrambled": "elbatciderp",
+                "scrambled": "blitaedcpre",
                 "index": 3
             },
             {
                 "original": "cease",
-                "scrambled": "esaec",
+                "scrambled": "aeesc",
                 "index": 6
             },
             {
                 "original": "flavor",
-                "scrambled": "rovalf",
+                "scrambled": "ovalrf",
                 "index": 13
             }
         ],
@@ -957,26 +957,26 @@ const quotesCalendar = [
     {
         "text": "The greatest glory in living is not in never falling, but in rising every time we fall.",
         "author": "Nelson Mandela",
-        "scrambledAuthor": "alednam noslen",
+        "scrambledAuthor": "elnsoN anedlMa",
         "scrambledWords": [
             {
                 "original": "greatest",
-                "scrambled": "tsetaerg",
+                "scrambled": "gtseeart",
                 "index": 1
             },
             {
                 "original": "glory",
-                "scrambled": "yrolg",
+                "scrambled": "roylg",
                 "index": 2
             },
             {
                 "original": "falling",
-                "scrambled": "gnillaf",
+                "scrambled": "iagnllf",
                 "index": 9
             },
             {
                 "original": "rising",
-                "scrambled": "gnisir",
+                "scrambled": "igirns",
                 "index": 12
             }
         ],
@@ -985,26 +985,26 @@ const quotesCalendar = [
     {
         "text": "It does not matter how slowly you go as long as you do not stop.",
         "author": "Confucius",
-        "scrambledAuthor": "suicufnoc",
+        "scrambledAuthor": "ucsfinuCo",
         "scrambledWords": [
             {
                 "original": "matter",
-                "scrambled": "rettam",
+                "scrambled": "ttmrea",
                 "index": 3
             },
             {
                 "original": "slowly",
-                "scrambled": "ylwols",
+                "scrambled": "lyoswl",
                 "index": 5
             },
             {
                 "original": "long",
-                "scrambled": "gnol",
+                "scrambled": "olng",
                 "index": 9
             },
             {
                 "original": "stop",
-                "scrambled": "pots",
+                "scrambled": "opts",
                 "index": 14
             }
         ],
@@ -1013,26 +1013,26 @@ const quotesCalendar = [
     {
         "text": "Whether you think you can or you think you can't, you're right.",
         "author": "Henry Ford",
-        "scrambledAuthor": "drof yrneh",
+        "scrambledAuthor": "Hnery oFdr",
         "scrambledWords": [
             {
                 "original": "whether",
-                "scrambled": "rehtehw",
+                "scrambled": "rwtehhe",
                 "index": 0
             },
             {
                 "original": "think",
-                "scrambled": "kniht",
+                "scrambled": "knthi",
                 "index": 2
             },
             {
                 "original": "think",
-                "scrambled": "kniht",
+                "scrambled": "ikthn",
                 "index": 2
             },
             {
                 "original": "right",
-                "scrambled": "thgir",
+                "scrambled": "hitrg",
                 "index": 11
             }
         ],
@@ -1041,26 +1041,26 @@ const quotesCalendar = [
     {
         "text": "The best revenge is massive success.",
         "author": "Frank Sinatra",
-        "scrambledAuthor": "artanis knarf",
+        "scrambledAuthor": "anFrk tarniaS",
         "scrambledWords": [
             {
                 "original": "best",
-                "scrambled": "tseb",
+                "scrambled": "etbs",
                 "index": 1
             },
             {
                 "original": "revenge",
-                "scrambled": "gvnreee",
+                "scrambled": "vnregee",
                 "index": 2
             },
             {
                 "original": "massive",
-                "scrambled": "evissam",
+                "scrambled": "msiasev",
                 "index": 4
             },
             {
                 "original": "success",
-                "scrambled": "sseccus",
+                "scrambled": "scescus",
                 "index": 5
             }
         ],
@@ -1069,26 +1069,26 @@ const quotesCalendar = [
     {
         "text": "Life is what we make it, always has been, always will be.",
         "author": "Grandma Moses",
-        "scrambledAuthor": "sesom amdnarg",
+        "scrambledAuthor": "dmGaanr sesoM",
         "scrambledWords": [
             {
                 "original": "life",
-                "scrambled": "efil",
+                "scrambled": "ilfe",
                 "index": 0
             },
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "htaw",
                 "index": 2
             },
             {
                 "original": "make",
-                "scrambled": "ekam",
+                "scrambled": "kema",
                 "index": 4
             },
             {
                 "original": "always",
-                "scrambled": "syawla",
+                "scrambled": "waslay",
                 "index": 6
             }
         ],
@@ -1097,26 +1097,26 @@ const quotesCalendar = [
     {
         "text": "The only impossible journey is the one you never start.",
         "author": "Tony Robbins",
-        "scrambledAuthor": "snibbor ynot",
+        "scrambledAuthor": "nyoT osnbiRb",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "yonl",
                 "index": 1
             },
             {
                 "original": "impossible",
-                "scrambled": "elbissopmi",
+                "scrambled": "pbslieisom",
                 "index": 2
             },
             {
                 "original": "journey",
-                "scrambled": "yenruoj",
+                "scrambled": "neruyjo",
                 "index": 3
             },
             {
                 "original": "never",
-                "scrambled": "reven",
+                "scrambled": "nevre",
                 "index": 8
             }
         ],
@@ -1125,11 +1125,11 @@ const quotesCalendar = [
     {
         "text": "Believe you can and you're halfway there.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "rodeTohe vtselReoo",
         "scrambledWords": [
             {
                 "original": "believe",
-                "scrambled": "eveileb",
+                "scrambled": "ilvebee",
                 "index": 0
             },
             {
@@ -1139,12 +1139,12 @@ const quotesCalendar = [
             },
             {
                 "original": "you're",
-                "scrambled": "er'uoy",
+                "scrambled": "reo'yu",
                 "index": 4
             },
             {
                 "original": "halfway",
-                "scrambled": "yawflah",
+                "scrambled": "fwylaah",
                 "index": 5
             }
         ],
@@ -1153,26 +1153,26 @@ const quotesCalendar = [
     {
         "text": "It is during our darkest moments that we must focus to see the light.",
         "author": "Aristotle",
-        "scrambledAuthor": "eltotsira",
+        "scrambledAuthor": "rtoeistlA",
         "scrambledWords": [
             {
                 "original": "during",
-                "scrambled": "gnirud",
+                "scrambled": "drinug",
                 "index": 2
             },
             {
                 "original": "darkest",
-                "scrambled": "tsekrad",
+                "scrambled": "datrkse",
                 "index": 4
             },
             {
                 "original": "moments",
-                "scrambled": "stnemom",
+                "scrambled": "esntomm",
                 "index": 5
             },
             {
                 "original": "focus",
-                "scrambled": "sucof",
+                "scrambled": "ucfos",
                 "index": 9
             }
         ],
@@ -1181,26 +1181,26 @@ const quotesCalendar = [
     {
         "text": "Don't let yesterday take up too much of today.",
         "author": "Will Rogers",
-        "scrambledAuthor": "sregor lliw",
+        "scrambledAuthor": "lliW grosRe",
         "scrambledWords": [
             {
                 "original": "yesterday",
-                "scrambled": "yadretsey",
+                "scrambled": "yryatsede",
                 "index": 2
             },
             {
                 "original": "take",
-                "scrambled": "ekat",
+                "scrambled": "etak",
                 "index": 3
             },
             {
                 "original": "much",
-                "scrambled": "hcum",
+                "scrambled": "chum",
                 "index": 6
             },
             {
                 "original": "today",
-                "scrambled": "yadot",
+                "scrambled": "dotya",
                 "index": 8
             }
         ],
@@ -1209,26 +1209,26 @@ const quotesCalendar = [
     {
         "text": "The way to get started is to quit talking and begin doing.",
         "author": "Walt Disney",
-        "scrambledAuthor": "yensid tlaw",
+        "scrambledAuthor": "latW ysnDie",
         "scrambledWords": [
             {
                 "original": "started",
-                "scrambled": "detrats",
+                "scrambled": "rdsatte",
                 "index": 4
             },
             {
                 "original": "quit",
-                "scrambled": "tiuq",
+                "scrambled": "quti",
                 "index": 7
             },
             {
                 "original": "talking",
-                "scrambled": "gniklat",
+                "scrambled": "tliangk",
                 "index": 8
             },
             {
                 "original": "doing",
-                "scrambled": "gniod",
+                "scrambled": "gdnio",
                 "index": 11
             }
         ],
@@ -1237,7 +1237,7 @@ const quotesCalendar = [
     {
         "text": "Your time is limited, don't waste it living someone else's life.",
         "author": "Steve Jobs",
-        "scrambledAuthor": "sboj evets",
+        "scrambledAuthor": "tvSee sobJ",
         "scrambledWords": [
             {
                 "original": "time",
@@ -1246,17 +1246,17 @@ const quotesCalendar = [
             },
             {
                 "original": "limited",
-                "scrambled": "detimil",
+                "scrambled": "elimtdi",
                 "index": 3
             },
             {
                 "original": "waste",
-                "scrambled": "etsaw",
+                "scrambled": "ewast",
                 "index": 5
             },
             {
                 "original": "living",
-                "scrambled": "gnivil",
+                "scrambled": "vignli",
                 "index": 7
             }
         ],
@@ -1265,26 +1265,26 @@ const quotesCalendar = [
     {
         "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
         "author": "Chinese Proverb",
-        "scrambledAuthor": "brevorp esenihc",
+        "scrambledAuthor": "sCeehni brorPev",
         "scrambledWords": [
             {
                 "original": "best",
-                "scrambled": "tseb",
+                "scrambled": "steb",
                 "index": 1
             },
             {
                 "original": "plant",
-                "scrambled": "tnalp",
+                "scrambled": "lntpa",
                 "index": 4
             },
             {
                 "original": "years",
-                "scrambled": "sraey",
+                "scrambled": "yares",
                 "index": 9
             },
             {
                 "original": "second",
-                "scrambled": "dnoces",
+                "scrambled": "sedcon",
                 "index": 12
             }
         ],
@@ -1293,26 +1293,26 @@ const quotesCalendar = [
     {
         "text": "Innovation distinguishes between a leader and a follower.",
         "author": "Steve Jobs",
-        "scrambledAuthor": "sboj evets",
+        "scrambledAuthor": "tSeve obsJ",
         "scrambledWords": [
             {
                 "original": "innovation",
-                "scrambled": "noitavonni",
+                "scrambled": "ooantnviin",
                 "index": 0
             },
             {
                 "original": "distinguishes",
-                "scrambled": "sehsiugnitsid",
+                "scrambled": "sgiutdhiseins",
                 "index": 1
             },
             {
                 "original": "leader",
-                "scrambled": "redael",
+                "scrambled": "deaelr",
                 "index": 4
             },
             {
                 "original": "follower",
-                "scrambled": "rewollof",
+                "scrambled": "orflwole",
                 "index": 7
             }
         ],
@@ -1321,26 +1321,26 @@ const quotesCalendar = [
     {
         "text": "The only thing we have to fear is fear itself.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "Tohoered eevRtsolo",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "olyn",
                 "index": 1
             },
             {
                 "original": "thing",
-                "scrambled": "gniht",
+                "scrambled": "thgni",
                 "index": 2
             },
             {
                 "original": "fear",
-                "scrambled": "raef",
+                "scrambled": "rfae",
                 "index": 6
             },
             {
                 "original": "itself",
-                "scrambled": "flesti",
+                "scrambled": "lfsiet",
                 "index": 9
             }
         ],
@@ -1349,26 +1349,26 @@ const quotesCalendar = [
     {
         "text": "In the middle of difficulty lies opportunity.",
         "author": "Albert Einstein",
-        "scrambledAuthor": "nietsnie trebla",
+        "scrambledAuthor": "btleAr iiEntens",
         "scrambledWords": [
             {
                 "original": "middle",
-                "scrambled": "elddim",
+                "scrambled": "dmlied",
                 "index": 2
             },
             {
                 "original": "difficulty",
-                "scrambled": "ytluciffid",
+                "scrambled": "fuiiydltfc",
                 "index": 4
             },
             {
                 "original": "lies",
-                "scrambled": "seil",
+                "scrambled": "leis",
                 "index": 5
             },
             {
                 "original": "opportunity",
-                "scrambled": "nyrioutppot",
+                "scrambled": "rtyotoiuppn",
                 "index": 6
             }
         ],
@@ -1377,26 +1377,26 @@ const quotesCalendar = [
     {
         "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
         "author": "Winston Churchill",
-        "scrambledAuthor": "llihcruhc notsniw",
+        "scrambledAuthor": "nstWnoi cuChrillh",
         "scrambledWords": [
             {
                 "original": "success",
-                "scrambled": "sseccus",
+                "scrambled": "ccssues",
                 "index": 0
             },
             {
                 "original": "failure",
-                "scrambled": "eruliaf",
+                "scrambled": "lreufia",
                 "index": 4
             },
             {
                 "original": "courage",
-                "scrambled": "egaruoc",
+                "scrambled": "aocuegr",
                 "index": 11
             },
             {
                 "original": "continue",
-                "scrambled": "eunitnoc",
+                "scrambled": "ntonecui",
                 "index": 13
             }
         ],
@@ -1405,26 +1405,26 @@ const quotesCalendar = [
     {
         "text": "The future belongs to those who believe in the beauty of their dreams.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "Troheedo Roevoltes",
         "scrambledWords": [
             {
                 "original": "future",
-                "scrambled": "erutuf",
+                "scrambled": "rfeutu",
                 "index": 1
             },
             {
                 "original": "belongs",
-                "scrambled": "sgnoleb",
+                "scrambled": "beosgln",
                 "index": 2
             },
             {
                 "original": "believe",
-                "scrambled": "eveileb",
+                "scrambled": "ielebve",
                 "index": 6
             },
             {
                 "original": "beauty",
-                "scrambled": "ytuaeb",
+                "scrambled": "ubteya",
                 "index": 9
             }
         ],
@@ -1433,26 +1433,26 @@ const quotesCalendar = [
     {
         "text": "Be yourself; everyone else is already taken.",
         "author": "Oscar Wilde",
-        "scrambledAuthor": "edliw racso",
+        "scrambledAuthor": "srcaO Weldi",
         "scrambledWords": [
             {
                 "original": "yourself",
-                "scrambled": "flesruoy",
+                "scrambled": "sufyoerl",
                 "index": 1
             },
             {
                 "original": "everyone",
-                "scrambled": "enoyreve",
+                "scrambled": "yeernevo",
                 "index": 2
             },
             {
                 "original": "already",
-                "scrambled": "ydaerla",
+                "scrambled": "lyearda",
                 "index": 5
             },
             {
                 "original": "taken",
-                "scrambled": "nekat",
+                "scrambled": "ntkae",
                 "index": 6
             }
         ],
@@ -1461,26 +1461,26 @@ const quotesCalendar = [
     {
         "text": "Life is what happens when you're busy making other plans.",
         "author": "John Lennon",
-        "scrambledAuthor": "nonnel nhoj",
+        "scrambledAuthor": "oJhn onnLne",
         "scrambledWords": [
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "athw",
                 "index": 2
             },
             {
                 "original": "happens",
-                "scrambled": "sneppah",
+                "scrambled": "shppaen",
                 "index": 3
             },
             {
                 "original": "busy",
-                "scrambled": "ysub",
+                "scrambled": "usyb",
                 "index": 6
             },
             {
                 "original": "making",
-                "scrambled": "gnikam",
+                "scrambled": "nakmig",
                 "index": 7
             }
         ],
@@ -1489,26 +1489,26 @@ const quotesCalendar = [
     {
         "text": "The only way to do great work is to love what you do.",
         "author": "Steve Jobs",
-        "scrambledAuthor": "sboj evets",
+        "scrambledAuthor": "tveeS oJbs",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "onyl",
                 "index": 1
             },
             {
                 "original": "great",
-                "scrambled": "taerg",
+                "scrambled": "taegr",
                 "index": 5
             },
             {
                 "original": "work",
-                "scrambled": "krow",
+                "scrambled": "orkw",
                 "index": 6
             },
             {
                 "original": "love",
-                "scrambled": "evol",
+                "scrambled": "evlo",
                 "index": 9
             }
         ],
@@ -1517,26 +1517,26 @@ const quotesCalendar = [
     {
         "text": "Tell me and I forget. Teach me and I remember. Involve me and I learn.",
         "author": "Benjamin Franklin",
-        "scrambledAuthor": "nilknarf nimajneb",
+        "scrambledAuthor": "emjnBain rknlnFai",
         "scrambledWords": [
             {
                 "original": "tell",
-                "scrambled": "llet",
+                "scrambled": "llte",
                 "index": 0
             },
             {
                 "original": "forget",
-                "scrambled": "tegrof",
+                "scrambled": "ogfert",
                 "index": 4
             },
             {
                 "original": "remember",
-                "scrambled": "rebmemer",
+                "scrambled": "errmmeeb",
                 "index": 9
             },
             {
                 "original": "learn",
-                "scrambled": "nrael",
+                "scrambled": "anlre",
                 "index": 14
             }
         ],
@@ -1545,26 +1545,26 @@ const quotesCalendar = [
     {
         "text": "You have been assigned this mountain to show others it can be moved.",
         "author": "Unknown",
-        "scrambledAuthor": "nwonknu",
+        "scrambledAuthor": "nnUkwon",
         "scrambledWords": [
             {
                 "original": "assigned",
-                "scrambled": "dengissa",
+                "scrambled": "desagisn",
                 "index": 3
             },
             {
                 "original": "mountain",
-                "scrambled": "niatnuom",
+                "scrambled": "uamontni",
                 "index": 5
             },
             {
                 "original": "show",
-                "scrambled": "wohs",
+                "scrambled": "owhs",
                 "index": 7
             },
             {
                 "original": "moved",
-                "scrambled": "devom",
+                "scrambled": "modve",
                 "index": 12
             }
         ],
@@ -1573,26 +1573,26 @@ const quotesCalendar = [
     {
         "text": "Do not go where the path may lead, go where there is no path and leave a trail.",
         "author": "Ralph Waldo Emerson",
-        "scrambledAuthor": "nosreme odlaw hplar",
+        "scrambledAuthor": "Rhalp doWla oEmnser",
         "scrambledWords": [
             {
                 "original": "where",
-                "scrambled": "erehw",
+                "scrambled": "ewher",
                 "index": 3
             },
             {
                 "original": "path",
-                "scrambled": "htap",
+                "scrambled": "hapt",
                 "index": 5
             },
             {
                 "original": "where",
-                "scrambled": "erehw",
+                "scrambled": "rehew",
                 "index": 3
             },
             {
                 "original": "trail",
-                "scrambled": "liart",
+                "scrambled": "lrait",
                 "index": 17
             }
         ],
@@ -1601,26 +1601,26 @@ const quotesCalendar = [
     {
         "text": "It is better to be hated for what you are than to be loved for what you are not.",
         "author": "André Gide",
-        "scrambledAuthor": "edig érdna",
+        "scrambledAuthor": "Arndé Gdie",
         "scrambledWords": [
             {
                 "original": "better",
-                "scrambled": "retteb",
+                "scrambled": "tbtree",
                 "index": 2
             },
             {
                 "original": "hated",
-                "scrambled": "detah",
+                "scrambled": "thead",
                 "index": 5
             },
             {
                 "original": "loved",
-                "scrambled": "devol",
+                "scrambled": "eodlv",
                 "index": 13
             },
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "thaw",
                 "index": 7
             }
         ],
@@ -1629,26 +1629,26 @@ const quotesCalendar = [
     {
         "text": "Always remember that you are absolutely unique. Just like everyone else.",
         "author": "Mark Twain",
-        "scrambledAuthor": "niawt kram",
+        "scrambledAuthor": "rMak waniT",
         "scrambledWords": [
             {
                 "original": "remember",
-                "scrambled": "rebmemer",
+                "scrambled": "brmremee",
                 "index": 1
             },
             {
                 "original": "absolutely",
-                "scrambled": "yletulosba",
+                "scrambled": "tsolaebuly",
                 "index": 5
             },
             {
                 "original": "unique",
-                "scrambled": "euqinu",
+                "scrambled": "eiuqun",
                 "index": 6
             },
             {
                 "original": "everyone",
-                "scrambled": "enoyreve",
+                "scrambled": "nreeeovy",
                 "index": 9
             }
         ],
@@ -1657,26 +1657,26 @@ const quotesCalendar = [
     {
         "text": "When you reach the end of your rope, tie a knot in it and hang on.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "rdoeohTe voleRstoe",
         "scrambledWords": [
             {
                 "original": "reach",
-                "scrambled": "hcaer",
+                "scrambled": "herac",
                 "index": 2
             },
             {
                 "original": "rope",
-                "scrambled": "epor",
+                "scrambled": "oerp",
                 "index": 7
             },
             {
                 "original": "knot",
-                "scrambled": "tonk",
+                "scrambled": "oktn",
                 "index": 10
             },
             {
                 "original": "hang",
-                "scrambled": "gnah",
+                "scrambled": "ahng",
                 "index": 14
             }
         ],
@@ -1685,26 +1685,26 @@ const quotesCalendar = [
     {
         "text": "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
         "author": "Mother Teresa",
-        "scrambledAuthor": "aseret rehtom",
+        "scrambledAuthor": "Mteohr Tesare",
         "scrambledWords": [
             {
                 "original": "spread",
-                "scrambled": "daerps",
+                "scrambled": "esrpda",
                 "index": 0
             },
             {
                 "original": "everywhere",
-                "scrambled": "erehwyreve",
+                "scrambled": "eveewrryeh",
                 "index": 2
             },
             {
                 "original": "leaving",
-                "scrambled": "gnivael",
+                "scrambled": "negvali",
                 "index": 13
             },
             {
                 "original": "happier",
-                "scrambled": "reippah",
+                "scrambled": "riaepph",
                 "index": 14
             }
         ],
@@ -1713,26 +1713,26 @@ const quotesCalendar = [
     {
         "text": "The only real mistake is the one from which we learn nothing.",
         "author": "Henry Ford",
-        "scrambledAuthor": "drof yrneh",
+        "scrambledAuthor": "yenHr rdFo",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "lnoy",
                 "index": 1
             },
             {
                 "original": "mistake",
-                "scrambled": "imktase",
+                "scrambled": "satikme",
                 "index": 3
             },
             {
                 "original": "learn",
-                "scrambled": "nrael",
+                "scrambled": "lrnae",
                 "index": 10
             },
             {
                 "original": "nothing",
-                "scrambled": "gnihton",
+                "scrambled": "otngnih",
                 "index": 11
             }
         ],
@@ -1741,26 +1741,26 @@ const quotesCalendar = [
     {
         "text": "The future starts today, not tomorrow.",
         "author": "Pope John Paul II",
-        "scrambledAuthor": "ii luap nhoj epop",
+        "scrambledAuthor": "Ppoe oJhn ualP II",
         "scrambledWords": [
             {
                 "original": "future",
-                "scrambled": "erutuf",
+                "scrambled": "furtue",
                 "index": 1
             },
             {
                 "original": "starts",
-                "scrambled": "strats",
+                "scrambled": "stsart",
                 "index": 2
             },
             {
                 "original": "today",
-                "scrambled": "yadot",
+                "scrambled": "ayotd",
                 "index": 3
             },
             {
                 "original": "tomorrow",
-                "scrambled": "worromot",
+                "scrambled": "wmooortr",
                 "index": 5
             }
         ],
@@ -1769,26 +1769,26 @@ const quotesCalendar = [
     {
         "text": "You don't have to be great to start, but you have to start to be great.",
         "author": "Zig Ziglar",
-        "scrambledAuthor": "ralgiz giz",
+        "scrambledAuthor": "Zgi iZgrla",
         "scrambledWords": [
             {
                 "original": "great",
-                "scrambled": "taerg",
+                "scrambled": "graet",
                 "index": 5
             },
             {
                 "original": "start",
-                "scrambled": "trats",
+                "scrambled": "artst",
                 "index": 7
             },
             {
                 "original": "start",
-                "scrambled": "trats",
+                "scrambled": "tsrat",
                 "index": 7
             },
             {
                 "original": "great",
-                "scrambled": "taerg",
+                "scrambled": "egart",
                 "index": 5
             }
         ],
@@ -1797,26 +1797,26 @@ const quotesCalendar = [
     {
         "text": "The greatest discovery of all time is that a person can change his future by merely changing his attitude.",
         "author": "Oprah Winfrey",
-        "scrambledAuthor": "yerfniw harpo",
+        "scrambledAuthor": "hrOap ifWnyer",
         "scrambledWords": [
             {
                 "original": "greatest",
-                "scrambled": "tsetaerg",
+                "scrambled": "atsrgeet",
                 "index": 1
             },
             {
                 "original": "discovery",
-                "scrambled": "yrevocsid",
+                "scrambled": "iseorcvdy",
                 "index": 2
             },
             {
                 "original": "change",
-                "scrambled": "egnahc",
+                "scrambled": "gahcen",
                 "index": 11
             },
             {
                 "original": "attitude",
-                "scrambled": "ieautttd",
+                "scrambled": "iauttedt",
                 "index": 18
             }
         ],
@@ -1825,16 +1825,16 @@ const quotesCalendar = [
     {
         "text": "Do one thing every day that scares you.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "dhrTeoeo Rtvooesle",
         "scrambledWords": [
             {
                 "original": "one",
-                "scrambled": "eno",
+                "scrambled": "noe",
                 "index": 1
             },
             {
                 "original": "thing",
-                "scrambled": "gniht",
+                "scrambled": "hgint",
                 "index": 2
             },
             {
@@ -1844,7 +1844,7 @@ const quotesCalendar = [
             },
             {
                 "original": "scares",
-                "scrambled": "seracs",
+                "scrambled": "creass",
                 "index": 6
             }
         ],
@@ -1853,26 +1853,26 @@ const quotesCalendar = [
     {
         "text": "What you do today can improve all your tomorrows.",
         "author": "Ralph Nader",
-        "scrambledAuthor": "redan hplar",
+        "scrambledAuthor": "apRlh arNed",
         "scrambledWords": [
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "wtha",
                 "index": 0
             },
             {
                 "original": "today",
-                "scrambled": "yadot",
+                "scrambled": "dtyoa",
                 "index": 3
             },
             {
                 "original": "improve",
-                "scrambled": "evorpmi",
+                "scrambled": "ierpmov",
                 "index": 5
             },
             {
                 "original": "tomorrows",
-                "scrambled": "sworromot",
+                "scrambled": "wrtoosmro",
                 "index": 8
             }
         ],
@@ -1881,26 +1881,26 @@ const quotesCalendar = [
     {
         "text": "Success is not the absence of obstacles, but the courage to push through them.",
         "author": "Unknown",
-        "scrambledAuthor": "nwonknu",
+        "scrambledAuthor": "nnwonkU",
         "scrambledWords": [
             {
                 "original": "success",
-                "scrambled": "sseccus",
+                "scrambled": "uscsces",
                 "index": 0
             },
             {
                 "original": "absence",
-                "scrambled": "ecnesba",
+                "scrambled": "bceensa",
                 "index": 4
             },
             {
                 "original": "courage",
-                "scrambled": "egaruoc",
+                "scrambled": "grucaoe",
                 "index": 9
             },
             {
                 "original": "through",
-                "scrambled": "hguorht",
+                "scrambled": "hohutrg",
                 "index": 12
             }
         ],
@@ -1909,26 +1909,26 @@ const quotesCalendar = [
     {
         "text": "The only thing standing between you and your goal is the story you keep telling yourself.",
         "author": "Tony Robbins",
-        "scrambledAuthor": "snibbor ynot",
+        "scrambledAuthor": "yTon nbbRois",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "onyl",
                 "index": 1
             },
             {
                 "original": "standing",
-                "scrambled": "gnidnats",
+                "scrambled": "ingantds",
                 "index": 3
             },
             {
                 "original": "goal",
-                "scrambled": "laog",
+                "scrambled": "lgao",
                 "index": 8
             },
             {
                 "original": "telling",
-                "scrambled": "gnillet",
+                "scrambled": "gnilelt",
                 "index": 14
             }
         ],
@@ -1937,26 +1937,26 @@ const quotesCalendar = [
     {
         "text": "You can't go back and change the beginning, but you can start where you are and change the ending.",
         "author": "C.S. Lewis",
-        "scrambledAuthor": "siwel .s.c",
+        "scrambledAuthor": ".CS. sewiL",
         "scrambledWords": [
             {
                 "original": "change",
-                "scrambled": "egnahc",
+                "scrambled": "geahnc",
                 "index": 5
             },
             {
                 "original": "beginning",
-                "scrambled": "gninnigeb",
+                "scrambled": "niinbgneg",
                 "index": 7
             },
             {
                 "original": "start",
-                "scrambled": "trats",
+                "scrambled": "sttar",
                 "index": 11
             },
             {
                 "original": "ending",
-                "scrambled": "gnidne",
+                "scrambled": "dineng",
                 "index": 18
             }
         ],
@@ -1965,26 +1965,26 @@ const quotesCalendar = [
     {
         "text": "The best way to predict the future is to create it.",
         "author": "Peter Drucker",
-        "scrambledAuthor": "rekcurd retep",
+        "scrambledAuthor": "etreP ckeurrD",
         "scrambledWords": [
             {
                 "original": "best",
-                "scrambled": "tseb",
+                "scrambled": "tbes",
                 "index": 1
             },
             {
                 "original": "predict",
-                "scrambled": "tciderp",
+                "scrambled": "itcrpde",
                 "index": 4
             },
             {
                 "original": "future",
-                "scrambled": "erutuf",
+                "scrambled": "erfutu",
                 "index": 6
             },
             {
                 "original": "create",
-                "scrambled": "etaerc",
+                "scrambled": "erctea",
                 "index": 9
             }
         ],
@@ -1993,21 +1993,21 @@ const quotesCalendar = [
     {
         "text": "It is not what you look at that matters, it is what you see.",
         "author": "Henry David Thoreau",
-        "scrambledAuthor": "uaeroht divad yrneh",
+        "scrambledAuthor": "yeHrn idaDv huraToe",
         "scrambledWords": [
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "awht",
                 "index": 3
             },
             {
                 "original": "look",
-                "scrambled": "kool",
+                "scrambled": "oolk",
                 "index": 5
             },
             {
                 "original": "matters",
-                "scrambled": "srettam",
+                "scrambled": "raemstt",
                 "index": 8
             },
             {
@@ -2021,26 +2021,26 @@ const quotesCalendar = [
     {
         "text": "The only way to achieve the impossible is to believe it is possible.",
         "author": "Lewis Carroll",
-        "scrambledAuthor": "llorrac siwel",
+        "scrambledAuthor": "Liwse larroCl",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "nyol",
                 "index": 1
             },
             {
                 "original": "achieve",
-                "scrambled": "eveihca",
+                "scrambled": "iehavce",
                 "index": 4
             },
             {
                 "original": "impossible",
-                "scrambled": "elbissopmi",
+                "scrambled": "ismspeolbi",
                 "index": 6
             },
             {
                 "original": "believe",
-                "scrambled": "eveileb",
+                "scrambled": "bveleei",
                 "index": 9
             }
         ],
@@ -2049,26 +2049,26 @@ const quotesCalendar = [
     {
         "text": "You are braver than you believe, stronger than you seem, and smarter than you think.",
         "author": "A.A. Milne",
-        "scrambledAuthor": "enlim .a.a",
+        "scrambledAuthor": ".AA. Melni",
         "scrambledWords": [
             {
                 "original": "braver",
-                "scrambled": "revarb",
+                "scrambled": "rbvrae",
                 "index": 2
             },
             {
                 "original": "believe",
-                "scrambled": "eveileb",
+                "scrambled": "vebelie",
                 "index": 5
             },
             {
                 "original": "stronger",
-                "scrambled": "regnorts",
+                "scrambled": "gsteorrn",
                 "index": 6
             },
             {
                 "original": "smarter",
-                "scrambled": "retrams",
+                "scrambled": "rsemart",
                 "index": 11
             }
         ],
@@ -2077,26 +2077,26 @@ const quotesCalendar = [
     {
         "text": "The greatest risk is not taking any risk at all.",
         "author": "Mark Zuckerberg",
-        "scrambledAuthor": "grebrekcuz kram",
+        "scrambledAuthor": "rkaM cerekZrubg",
         "scrambledWords": [
             {
                 "original": "greatest",
-                "scrambled": "tsetaerg",
+                "scrambled": "stergaet",
                 "index": 1
             },
             {
                 "original": "risk",
-                "scrambled": "ksir",
+                "scrambled": "kisr",
                 "index": 2
             },
             {
                 "original": "taking",
-                "scrambled": "gnikat",
+                "scrambled": "gnkait",
                 "index": 5
             },
             {
                 "original": "risk",
-                "scrambled": "ksir",
+                "scrambled": "skir",
                 "index": 2
             }
         ],
@@ -2105,26 +2105,26 @@ const quotesCalendar = [
     {
         "text": "Don't watch the clock; do what it does. Keep going.",
         "author": "Sam Levenson",
-        "scrambledAuthor": "nosnevel mas",
+        "scrambledAuthor": "maS vneLseon",
         "scrambledWords": [
             {
                 "original": "watch",
-                "scrambled": "hctaw",
+                "scrambled": "wtcah",
                 "index": 1
             },
             {
                 "original": "clock",
-                "scrambled": "kcolc",
+                "scrambled": "coclk",
                 "index": 3
             },
             {
                 "original": "does",
-                "scrambled": "seod",
+                "scrambled": "soed",
                 "index": 7
             },
             {
                 "original": "keep",
-                "scrambled": "peek",
+                "scrambled": "ekpe",
                 "index": 8
             }
         ],
@@ -2133,26 +2133,26 @@ const quotesCalendar = [
     {
         "text": "The only limit to our realization of tomorrow is our doubts of today.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "ehodTore oRtoelesv",
         "scrambledWords": [
             {
                 "original": "limit",
-                "scrambled": "timil",
+                "scrambled": "ilimt",
                 "index": 2
             },
             {
                 "original": "realization",
-                "scrambled": "noitazilaer",
+                "scrambled": "larzatnieoi",
                 "index": 5
             },
             {
                 "original": "tomorrow",
-                "scrambled": "worromot",
+                "scrambled": "otormrwo",
                 "index": 7
             },
             {
                 "original": "doubts",
-                "scrambled": "dtoubs",
+                "scrambled": "uostbd",
                 "index": 10
             }
         ],
@@ -2161,26 +2161,26 @@ const quotesCalendar = [
     {
         "text": "Your life does not get better by chance, it gets better by change.",
         "author": "Jim Rohn",
-        "scrambledAuthor": "nhor mij",
+        "scrambledAuthor": "imJ hoRn",
         "scrambledWords": [
             {
                 "original": "life",
-                "scrambled": "efil",
+                "scrambled": "eifl",
                 "index": 1
             },
             {
                 "original": "better",
-                "scrambled": "retteb",
+                "scrambled": "etterb",
                 "index": 5
             },
             {
                 "original": "chance",
-                "scrambled": "ecnahc",
+                "scrambled": "nhceca",
                 "index": 7
             },
             {
                 "original": "change",
-                "scrambled": "egnahc",
+                "scrambled": "ncahge",
                 "index": 12
             }
         ],
@@ -2189,26 +2189,26 @@ const quotesCalendar = [
     {
         "text": "The only person you should try to be better than is the person you were yesterday.",
         "author": "Unknown",
-        "scrambledAuthor": "nwonknu",
+        "scrambledAuthor": "nnUownk",
         "scrambledWords": [
             {
                 "original": "person",
-                "scrambled": "nosrep",
+                "scrambled": "srenop",
                 "index": 2
             },
             {
                 "original": "try",
-                "scrambled": "yrt",
+                "scrambled": "ryt",
                 "index": 5
             },
             {
                 "original": "better",
-                "scrambled": "retteb",
+                "scrambled": "retbet",
                 "index": 8
             },
             {
                 "original": "yesterday",
-                "scrambled": "yadretsey",
+                "scrambled": "sedatyeyr",
                 "index": 15
             }
         ],
@@ -2217,26 +2217,26 @@ const quotesCalendar = [
     {
         "text": "Success is walking from failure to failure with no loss of enthusiasm.",
         "author": "Winston Churchill",
-        "scrambledAuthor": "llihcruhc notsniw",
+        "scrambledAuthor": "ostninW Cuihrllch",
         "scrambledWords": [
             {
                 "original": "success",
-                "scrambled": "sseccus",
+                "scrambled": "sescusc",
                 "index": 0
             },
             {
                 "original": "failure",
-                "scrambled": "eruliaf",
+                "scrambled": "realiuf",
                 "index": 4
             },
             {
                 "original": "failure",
-                "scrambled": "eruliaf",
+                "scrambled": "eluaifr",
                 "index": 4
             },
             {
                 "original": "enthusiasm",
-                "scrambled": "hatseisumn",
+                "scrambled": "aiuhmtssen",
                 "index": 11
             }
         ],
@@ -2245,7 +2245,7 @@ const quotesCalendar = [
     {
         "text": "The best way out is always through.",
         "author": "Robert Frost",
-        "scrambledAuthor": "tsorf trebor",
+        "scrambledAuthor": "terobR Fotsr",
         "scrambledWords": [
             {
                 "original": "best",
@@ -2254,17 +2254,17 @@ const quotesCalendar = [
             },
             {
                 "original": "way",
-                "scrambled": "yaw",
+                "scrambled": "ayw",
                 "index": 2
             },
             {
                 "original": "always",
-                "scrambled": "syawla",
+                "scrambled": "lasawy",
                 "index": 5
             },
             {
                 "original": "through",
-                "scrambled": "hguorht",
+                "scrambled": "ghorthu",
                 "index": 6
             }
         ],
@@ -2273,26 +2273,26 @@ const quotesCalendar = [
     {
         "text": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
         "author": "Zig Ziglar",
-        "scrambledAuthor": "ralgiz giz",
+        "scrambledAuthor": "iZg gZaril",
         "scrambledWords": [
             {
                 "original": "achieving",
-                "scrambled": "gniveihca",
+                "scrambled": "igaehvinc",
                 "index": 4
             },
             {
                 "original": "goals",
-                "scrambled": "slaog",
+                "scrambled": "lagos",
                 "index": 6
             },
             {
                 "original": "important",
-                "scrambled": "tnatropmi",
+                "scrambled": "tnmriaotp",
                 "index": 10
             },
             {
                 "original": "become",
-                "scrambled": "bemceo",
+                "scrambled": "moebec",
                 "index": 14
             }
         ],
@@ -2301,26 +2301,26 @@ const quotesCalendar = [
     {
         "text": "The only thing that stands between you and your dream is the will to try and the belief that it is actually possible.",
         "author": "Irving Babbitt",
-        "scrambledAuthor": "ttibbab gnivri",
+        "scrambledAuthor": "ivgrnI bbaBitt",
         "scrambledWords": [
             {
                 "original": "thing",
-                "scrambled": "gniht",
+                "scrambled": "hgnti",
                 "index": 2
             },
             {
                 "original": "dream",
-                "scrambled": "maerd",
+                "scrambled": "erdma",
                 "index": 9
             },
             {
                 "original": "will",
-                "scrambled": "lliw",
+                "scrambled": "illw",
                 "index": 12
             },
             {
                 "original": "belief",
-                "scrambled": "feileb",
+                "scrambled": "eibelf",
                 "index": 17
             }
         ],
@@ -2329,26 +2329,26 @@ const quotesCalendar = [
     {
         "text": "You must do the thing you think you cannot do.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "eoTorhed etsveoloR",
         "scrambledWords": [
             {
                 "original": "must",
-                "scrambled": "tsum",
+                "scrambled": "sutm",
                 "index": 1
             },
             {
                 "original": "thing",
-                "scrambled": "gniht",
+                "scrambled": "igthn",
                 "index": 4
             },
             {
                 "original": "think",
-                "scrambled": "kniht",
+                "scrambled": "ihknt",
                 "index": 6
             },
             {
                 "original": "cannot",
-                "scrambled": "tonnac",
+                "scrambled": "onatcn",
                 "index": 8
             }
         ],
@@ -2357,26 +2357,26 @@ const quotesCalendar = [
     {
         "text": "The only way to do great work is to love what you do.",
         "author": "Steve Jobs",
-        "scrambledAuthor": "sboj evets",
+        "scrambledAuthor": "evSte sJob",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "yonl",
                 "index": 1
             },
             {
                 "original": "great",
-                "scrambled": "taerg",
+                "scrambled": "rgate",
                 "index": 5
             },
             {
                 "original": "love",
-                "scrambled": "evol",
+                "scrambled": "velo",
                 "index": 9
             },
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "hwta",
                 "index": 10
             }
         ],
@@ -2385,11 +2385,11 @@ const quotesCalendar = [
     {
         "text": "If you want to lift yourself up, lift up someone else.",
         "author": "Booker T. Washington",
-        "scrambledAuthor": "notgnihsaw .t rekoob",
+        "scrambledAuthor": "kooreB .T tahnnioWgs",
         "scrambledWords": [
             {
                 "original": "want",
-                "scrambled": "tnaw",
+                "scrambled": "wnat",
                 "index": 2
             },
             {
@@ -2399,12 +2399,12 @@ const quotesCalendar = [
             },
             {
                 "original": "yourself",
-                "scrambled": "flesruoy",
+                "scrambled": "lusyoerf",
                 "index": 5
             },
             {
                 "original": "someone",
-                "scrambled": "enoemos",
+                "scrambled": "onemseo",
                 "index": 9
             }
         ],
@@ -2413,26 +2413,26 @@ const quotesCalendar = [
     {
         "text": "The greatest glory is not in never failing, but in rising up every time we fail.",
         "author": "Ralph Waldo Emerson",
-        "scrambledAuthor": "nosreme odlaw hplar",
+        "scrambledAuthor": "Rhpla adWol rnesomE",
         "scrambledWords": [
             {
                 "original": "greatest",
-                "scrambled": "tsetaerg",
+                "scrambled": "gersaett",
                 "index": 1
             },
             {
                 "original": "glory",
-                "scrambled": "yrolg",
+                "scrambled": "glryo",
                 "index": 2
             },
             {
                 "original": "failing",
-                "scrambled": "gniliaf",
+                "scrambled": "iinafgl",
                 "index": 7
             },
             {
                 "original": "rising",
-                "scrambled": "gnisir",
+                "scrambled": "sriign",
                 "index": 10
             }
         ],
@@ -2441,26 +2441,26 @@ const quotesCalendar = [
     {
         "text": "The only limit is the one you set yourself.",
         "author": "Unknown",
-        "scrambledAuthor": "nwonknu",
+        "scrambledAuthor": "nUownkn",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "lyno",
                 "index": 1
             },
             {
                 "original": "limit",
-                "scrambled": "timil",
+                "scrambled": "timli",
                 "index": 2
             },
             {
                 "original": "set",
-                "scrambled": "tes",
+                "scrambled": "est",
                 "index": 7
             },
             {
                 "original": "yourself",
-                "scrambled": "flesruoy",
+                "scrambled": "seloyurf",
                 "index": 8
             }
         ],
@@ -2469,26 +2469,26 @@ const quotesCalendar = [
     {
         "text": "You have within you, right now, everything you need to deal with whatever the world can throw at you.",
         "author": "Brian Tracy",
-        "scrambledAuthor": "ycart nairb",
+        "scrambledAuthor": "nriBa rTcya",
         "scrambledWords": [
             {
                 "original": "within",
-                "scrambled": "nihtiw",
+                "scrambled": "initwh",
                 "index": 2
             },
             {
                 "original": "right",
-                "scrambled": "thgir",
+                "scrambled": "hgtir",
                 "index": 4
             },
             {
                 "original": "everything",
-                "scrambled": "gnihtyreve",
+                "scrambled": "enrhviyegt",
                 "index": 6
             },
             {
                 "original": "deal",
-                "scrambled": "laed",
+                "scrambled": "elad",
                 "index": 10
             }
         ],
@@ -2497,26 +2497,26 @@ const quotesCalendar = [
     {
         "text": "The only way to discover the limits of the possible is to go beyond them into the impossible.",
         "author": "Arthur C. Clarke",
-        "scrambledAuthor": "ekralc .c ruhtra",
+        "scrambledAuthor": "Arruth .C kaerCl",
         "scrambledWords": [
             {
                 "original": "discover",
-                "scrambled": "revocsid",
+                "scrambled": "vcsrodie",
                 "index": 4
             },
             {
                 "original": "limits",
-                "scrambled": "stimil",
+                "scrambled": "islitm",
                 "index": 6
             },
             {
                 "original": "possible",
-                "scrambled": "elbissop",
+                "scrambled": "sbeslpio",
                 "index": 9
             },
             {
                 "original": "impossible",
-                "scrambled": "elbissopmi",
+                "scrambled": "ibseliopsm",
                 "index": 17
             }
         ],
@@ -2525,26 +2525,26 @@ const quotesCalendar = [
     {
         "text": "What we achieve inwardly will change outer reality.",
         "author": "Plutarch",
-        "scrambledAuthor": "hcratulp",
+        "scrambledAuthor": "thracPlu",
         "scrambledWords": [
             {
                 "original": "what",
-                "scrambled": "tahw",
+                "scrambled": "hawt",
                 "index": 0
             },
             {
                 "original": "achieve",
-                "scrambled": "eveihca",
+                "scrambled": "aceehvi",
                 "index": 2
             },
             {
                 "original": "inwardly",
-                "scrambled": "ylwardni",
+                "scrambled": "dlrniyaw",
                 "index": 3
             },
             {
                 "original": "reality",
-                "scrambled": "rialyet",
+                "scrambled": "eiatrly",
                 "index": 7
             }
         ],
@@ -2553,34 +2553,29 @@ const quotesCalendar = [
     {
         "text": "The only thing we have to fear is fear itself.",
         "author": "Theodore Roosevelt",
-        "scrambledAuthor": "tlevesoor erodoeht",
+        "scrambledAuthor": "ooeTerdh eRoslotev",
         "scrambledWords": [
             {
                 "original": "only",
-                "scrambled": "ylno",
+                "scrambled": "yonl",
                 "index": 1
             },
             {
                 "original": "thing",
-                "scrambled": "gniht",
+                "scrambled": "hntig",
                 "index": 2
             },
             {
                 "original": "fear",
-                "scrambled": "raef",
+                "scrambled": "rfea",
                 "index": 6
             },
             {
                 "original": "itself",
-                "scrambled": "flesti",
+                "scrambled": "tslfei",
                 "index": 9
             }
         ],
         "date": "2025-08-31"
     }
 ];
-
-// Export for use in other modules if needed
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = quotesCalendar;
-}
