@@ -801,11 +801,20 @@ class DailyQuotePuzzle {
         this.playTypingSound();
         this.renderInputArea();
         
-        if (this.userInput.length === this.activeWord.original.length) {
+        // For authors, check against length without spaces
+        const targetLength = this.activeWord.isAuthor ? 
+            this.activeWord.original.replace(/\s/g, '').length : 
+            this.activeWord.original.length;
+            
+        if (this.userInput.length === targetLength) {
             const inputWord = this.userInput.toLowerCase();
             const targetWord = this.activeWord.original.toLowerCase();
             
-            if (inputWord === targetWord) {
+            // For authors, remove spaces from comparison
+            const compareInput = this.activeWord.isAuthor ? inputWord.replace(/\s/g, '') : inputWord;
+            const compareTarget = this.activeWord.isAuthor ? targetWord.replace(/\s/g, '') : targetWord;
+            
+            if (compareInput === compareTarget) {
                 if (this.activeWord.isAuthor) {
                     this.authorSolved = true;
                     this.updateAuthorDisplay();
