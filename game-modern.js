@@ -788,11 +788,10 @@ class DailyQuotePuzzle {
                 // Add space after each word except the last
                 if (wordIndex < this.authorWordStructure.length - 1) {
                     const spaceCell = document.createElement('div');
-                    spaceCell.className = 'letter-cell';
-                    spaceCell.style.border = 'none';
-                    spaceCell.style.background = 'transparent';
+                    spaceCell.className = 'author-space';
                     spaceCell.style.width = '20px';
-                    spaceCell.textContent = '';
+                    spaceCell.style.height = '100%';
+                    spaceCell.style.display = 'inline-block';
                     this.elements.letterCells.appendChild(spaceCell);
                     cellIndex++;
                 }
@@ -1003,7 +1002,7 @@ class DailyQuotePuzzle {
         this.userInput = '';
         
         // For authors, keep all letters together but track word structure
-        this.availableLetters = this.currentQuote.scrambledAuthor.split('');
+        this.availableLetters = this.currentQuote.scrambledAuthor.replace(/\s/g, '').split('');
         this.authorWordStructure = this.currentQuote.author.split(' ').map(word => word.length);
         this.usedLetters = [];
         
