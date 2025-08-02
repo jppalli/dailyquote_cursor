@@ -2,7 +2,10 @@
 class DailyQuotePuzzle {
     constructor() {
         this.quotes = quotesCalendar;
+        console.log('🎮 Game constructor called');
+        console.log('📚 Quotes loaded:', this.quotes.length);
         this.currentQuote = this.findTodayQuote();
+        console.log('🎯 Selected quote:', this.currentQuote.text);
         this.activeWord = null;
         this.solvedWords = new Set();
         this.authorSolved = false;
@@ -570,14 +573,19 @@ class DailyQuotePuzzle {
         const today = new Date();
         const todayStr = this.formatDate(today);
         
+        console.log('🔍 findTodayQuote() called');
+        console.log('📅 Today:', todayStr);
+        console.log('📚 Total quotes available:', this.quotes.length);
+        
         // Find today's quote
         const todayQuote = this.quotes.find(q => q.date === todayStr);
         
         if (todayQuote) {
-            console.log(`Found today's quote for ${todayStr}`);
+            console.log(`✅ Found today's quote for ${todayStr}: "${todayQuote.text}"`);
             return todayQuote;
         } else {
-            console.log(`No quote found for today (${todayStr}), using first quote as fallback`);
+            console.log(`❌ No quote found for today (${todayStr}), using first quote as fallback`);
+            console.log('📋 Available dates (first 10):', this.quotes.slice(0, 10).map(q => q.date));
             return this.quotes[0];
         }
     }
