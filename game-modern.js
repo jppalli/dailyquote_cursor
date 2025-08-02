@@ -795,6 +795,13 @@ class DailyQuotePuzzle {
     handleLetterClick(letter, index) {
         if (this.usedLetters.includes(index) || this.isUnscrambling) return;
         
+        // For authors, skip spaces in user input but still mark them as used
+        if (this.activeWord.isAuthor && letter === ' ') {
+            this.usedLetters = [...this.usedLetters, index];
+            this.renderInputArea();
+            return;
+        }
+        
         this.userInput += letter;
         this.usedLetters = [...this.usedLetters, index];
         
@@ -970,7 +977,25 @@ class DailyQuotePuzzle {
         };
         
         this.userInput = '';
-        this.availableLetters = this.currentQuote.scrambledAuthor.split('');
+        
+        // For authors, create grouped letters with spaces
+        const authorWords = this.currentQuote.author.split(' ');
+        const groupedLetters = [];
+        let letterIndex = 0;
+        
+        authorWords.forEach((word, wordIndex) => {
+            // Add letters for this word
+            for (let i = 0; i < word.length; i++) {
+                groupedLetters.push(this.currentQuote.scrambledAuthor[letterIndex]);
+                letterIndex++;
+            }
+            // Add space after each word except the last
+            if (wordIndex < authorWords.length - 1) {
+                groupedLetters.push(' ');
+            }
+        });
+        
+        this.availableLetters = groupedLetters;
         this.usedLetters = [];
         
         this.renderInputArea();
