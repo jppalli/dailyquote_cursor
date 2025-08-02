@@ -769,11 +769,42 @@ class DailyQuotePuzzle {
         const targetLength = this.activeWord.original.length;
         this.elements.letterCells.innerHTML = '';
         
-        for (let i = 0; i < targetLength; i++) {
-            const cell = document.createElement('div');
-            cell.className = 'letter-cell';
-            cell.textContent = this.userInput[i] || '';
-            this.elements.letterCells.appendChild(cell);
+        if (this.activeWord.isAuthor && this.authorWordStructure) {
+            // For authors, create input boxes with spaces between word groups
+            let userInputIndex = 0;
+            let cellIndex = 0;
+            
+            this.authorWordStructure.forEach((wordLength, wordIndex) => {
+                // Add cells for this word
+                for (let i = 0; i < wordLength; i++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'letter-cell';
+                    cell.textContent = this.userInput[userInputIndex] || '';
+                    this.elements.letterCells.appendChild(cell);
+                    userInputIndex++;
+                    cellIndex++;
+                }
+                
+                // Add space after each word except the last
+                if (wordIndex < this.authorWordStructure.length - 1) {
+                    const spaceCell = document.createElement('div');
+                    spaceCell.className = 'letter-cell';
+                    spaceCell.style.border = 'none';
+                    spaceCell.style.background = 'transparent';
+                    spaceCell.style.width = '20px';
+                    spaceCell.textContent = '';
+                    this.elements.letterCells.appendChild(spaceCell);
+                    cellIndex++;
+                }
+            });
+        } else {
+            // For regular words, create normal input boxes
+            for (let i = 0; i < targetLength; i++) {
+                const cell = document.createElement('div');
+                cell.className = 'letter-cell';
+                cell.textContent = this.userInput[i] || '';
+                this.elements.letterCells.appendChild(cell);
+            }
         }
         
         this.elements.availableLetters.innerHTML = '';
@@ -794,13 +825,6 @@ class DailyQuotePuzzle {
     
     handleLetterClick(letter, index) {
         if (this.usedLetters.includes(index) || this.isUnscrambling) return;
-        
-        // For authors, skip spaces in user input but still mark them as used
-        if (this.activeWord.isAuthor && letter === ' ') {
-            this.usedLetters = [...this.usedLetters, index];
-            this.renderInputArea();
-            return;
-        }
         
         this.userInput += letter;
         this.usedLetters = [...this.usedLetters, index];
@@ -978,24 +1002,9 @@ class DailyQuotePuzzle {
         
         this.userInput = '';
         
-        // For authors, create grouped letters with spaces
-        const authorWords = this.currentQuote.author.split(' ');
-        const groupedLetters = [];
-        let letterIndex = 0;
-        
-        authorWords.forEach((word, wordIndex) => {
-            // Add letters for this word
-            for (let i = 0; i < word.length; i++) {
-                groupedLetters.push(this.currentQuote.scrambledAuthor[letterIndex]);
-                letterIndex++;
-            }
-            // Add space after each word except the last
-            if (wordIndex < authorWords.length - 1) {
-                groupedLetters.push(' ');
-            }
-        });
-        
-        this.availableLetters = groupedLetters;
+        // For authors, keep all letters together but track word structure
+        this.availableLetters = this.currentQuote.scrambledAuthor.split('');
+        this.authorWordStructure = this.currentQuote.author.split(' ').map(word => word.length);
         this.usedLetters = [];
         
         this.renderInputArea();
