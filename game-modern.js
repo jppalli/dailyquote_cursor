@@ -2,7 +2,7 @@
 class DailyQuotePuzzle {
     constructor() {
         this.quotes = quotesCalendar;
-        this.currentQuote = this.quotes[0];
+        this.currentQuote = this.findTodayQuote();
         this.activeWord = null;
         this.solvedWords = new Set();
         this.authorSolved = false;
@@ -564,6 +564,22 @@ class DailyQuotePuzzle {
         const month = String(date.getMonth() + 1).padStart(2, '0');
         const day = String(date.getDate()).padStart(2, '0');
         return `${year}-${month}-${day}`;
+    }
+    
+    findTodayQuote() {
+        const today = new Date();
+        const todayStr = this.formatDate(today);
+        
+        // Find today's quote
+        const todayQuote = this.quotes.find(q => q.date === todayStr);
+        
+        if (todayQuote) {
+            console.log(`Found today's quote for ${todayStr}`);
+            return todayQuote;
+        } else {
+            console.log(`No quote found for today (${todayStr}), using first quote as fallback`);
+            return this.quotes[0];
+        }
     }
     
     toTitleCase(str) {
