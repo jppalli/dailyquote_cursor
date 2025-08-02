@@ -685,8 +685,10 @@ class DailyQuotePuzzle {
             this.elements.quoteAuthor.className = 'author';
         } else {
             const isActive = this.activeWord && this.activeWord.isAuthor;
-            this.elements.quoteAuthor.innerHTML = `<span class="author scrambled ${isActive ? 'active' : ''}" 
-                                                        id="authorScrambled">${this.currentQuote.scrambledAuthor}</span>`;
+            // Display scrambled author with gaps between words
+            const scrambledAuthorWithGaps = this.currentQuote.scrambledAuthor.replace(/\s+/g, '   ');
+            this.elements.quoteAuthor.innerHTML = `<span class="author scrambled ${isActive ? 'active' : ''}"
+                                                        id="authorScrambled">${scrambledAuthorWithGaps}</span>`;
             document.getElementById('authorScrambled').addEventListener('click', () => this.handleAuthorClick());
         }
     }
@@ -739,7 +741,9 @@ class DailyQuotePuzzle {
         };
         
         this.userInput = '';
-        this.availableLetters = this.currentQuote.scrambledAuthor.split('');
+        // For authors, keep all letters together without spaces and track word structure
+        this.availableLetters = this.currentQuote.scrambledAuthor.replace(/\s/g, '').split('');
+        this.authorWordStructure = this.currentQuote.author.split(' ').map(word => word.length);
         this.usedLetters = [];
         
         this.renderInputArea();
@@ -770,7 +774,7 @@ class DailyQuotePuzzle {
         this.elements.letterCells.innerHTML = '';
         
         if (this.activeWord.isAuthor && this.authorWordStructure) {
-            // For authors, create input boxes with spaces between word groups
+            // For authors, create input boxes with gaps between word groups
             let userInputIndex = 0;
             let cellIndex = 0;
             
@@ -785,14 +789,17 @@ class DailyQuotePuzzle {
                     cellIndex++;
                 }
                 
-                // Add space after each word except the last
+                // Add gap after each word except the last
                 if (wordIndex < this.authorWordStructure.length - 1) {
-                    const spaceCell = document.createElement('div');
-                    spaceCell.className = 'author-space';
-                    spaceCell.style.width = '20px';
-                    spaceCell.style.height = '100%';
-                    spaceCell.style.display = 'inline-block';
-                    this.elements.letterCells.appendChild(spaceCell);
+                    const gapCell = document.createElement('div');
+                    gapCell.className = 'author-gap';
+                    gapCell.style.width = '30px';
+                    gapCell.style.height = '50px';
+                    gapCell.style.display = 'inline-block';
+                    gapCell.style.position = 'relative';
+                    // Add visual indicator for word separation
+                    gapCell.innerHTML = '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 2px; height: 20px; background: #ddd;"></div>';
+                    this.elements.letterCells.appendChild(gapCell);
                     cellIndex++;
                 }
             });
@@ -832,16 +839,16 @@ class DailyQuotePuzzle {
         this.renderInputArea();
         
         // For authors, check against length without spaces
-        const targetLength = this.activeWord.isAuthor ? 
-            this.activeWord.original.replace(/\s/g, '').length : 
+        const targetLength = this.activeWord.isAuthor ?
+            this.activeWord.original.replace(/\s/g, '').length :
             this.activeWord.original.length;
             
         if (this.userInput.length === targetLength) {
             const inputWord = this.userInput.toLowerCase();
             const targetWord = this.activeWord.original.toLowerCase();
             
-            // For authors, remove spaces from comparison
-            const compareInput = this.activeWord.isAuthor ? inputWord.replace(/\s/g, '') : inputWord;
+            // For authors, remove spaces from both input and target for comparison
+            const compareInput = this.activeWord.isAuthor ? inputWord : inputWord;
             const compareTarget = this.activeWord.isAuthor ? targetWord.replace(/\s/g, '') : targetWord;
             
             if (compareInput === compareTarget) {
@@ -1001,7 +1008,7 @@ class DailyQuotePuzzle {
         
         this.userInput = '';
         
-        // For authors, keep all letters together but track word structure
+        // For authors, keep all letters together without spaces and track word structure
         this.availableLetters = this.currentQuote.scrambledAuthor.replace(/\s/g, '').split('');
         this.authorWordStructure = this.currentQuote.author.split(' ').map(word => word.length);
         this.usedLetters = [];
@@ -1155,8 +1162,12 @@ class DailyQuotePuzzle {
         // Start the cooldown
         this.startUnscrambleCooldown();
         
-        const targetWord = this.activeWord.original;
-        const scrambledLetters = this.activeWord.scrambled.split('');
+        const targetWord = this.activeWord.isAuthor ?
+            this.activeWord.original.replace(/\s/g, '') :
+            this.activeWord.original;
+        const scrambledLetters = this.activeWord.isAuthor ?
+            this.activeWord.scrambled.replace(/\s/g, '').split('') :
+            this.activeWord.scrambled.split('');
         
         this.userInput = '';
         this.usedLetters = [];
@@ -1169,7 +1180,9 @@ class DailyQuotePuzzle {
             if (letterIndex >= targetWord.length) {
                 // Word is complete, check if it's correct
                 const inputWord = this.userInput.toLowerCase();
-                const targetWordLower = this.activeWord.original.toLowerCase();
+                const targetWordLower = this.activeWord.isAuthor ?
+                    this.activeWord.original.toLowerCase().replace(/\s/g, '') :
+                    this.activeWord.original.toLowerCase();
                 
                 if (inputWord === targetWordLower) {
                     setTimeout(() => {
