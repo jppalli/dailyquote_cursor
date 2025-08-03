@@ -508,31 +508,57 @@ class DailyQuotePuzzle {
             completedAt: new Date().toISOString()
         };
         
+        // Update total solved count
         userData.stats.totalSolved = Object.values(userData.puzzles).filter(p => p.solved).length;
         
-        const today = new Date(dateStr);
-        const yesterday = new Date(today);
-        yesterday.setDate(yesterday.getDate() - 1);
-        const yesterdayStr = this.formatDate(yesterday);
+        // Calculate current streak properly
+        this.calculateCurrentStreak(userData);
         
-        if (userData.puzzles[yesterdayStr]?.solved) {
-            userData.stats.currentStreak++;
-        } else {
-            userData.stats.currentStreak = 1;
-        }
-        
+        // Update max streak if current streak is higher
         if (userData.stats.currentStreak > userData.stats.maxStreak) {
             userData.stats.maxStreak = userData.stats.currentStreak;
         }
         
-        userData.stats.totalTime += this.gameTime;
+        // Update total time and recalculate average
+        this.updateTotalTimeAndAverage(userData);
         userData.stats.lastPlayed = dateStr;
         
         this.saveUserData(userData);
     }
+
+    calculateCurrentStreak(userData) {
+        const today = new Date();
+        const todayStr = this.formatDate(today);
+        let currentStreak = 0;
+        let checkDate = new Date(today);
+        
+        // Count consecutive days backwards from today
+        while (true) {
+            const dateStr = this.formatDate(checkDate);
+            if (userData.puzzles[dateStr]?.solved) {
+                currentStreak++;
+                checkDate.setDate(checkDate.getDate() - 1);
+            } else {
+                break;
+            }
+        }
+        
+        userData.stats.currentStreak = currentStreak;
+    }
+
+    updateTotalTimeAndAverage(userData) {
+        // Calculate total time from all completed puzzles
+        const completedPuzzles = Object.values(userData.puzzles).filter(p => p.solved);
+        userData.stats.totalTime = completedPuzzles.reduce((total, puzzle) => total + (puzzle.time || 0), 0);
+    }
     
     updateStatsDisplay() {
         const userData = this.loadUserData();
+        
+        // Recalculate streak and time to ensure accuracy
+        this.calculateCurrentStreak(userData);
+        this.updateTotalTimeAndAverage(userData);
+        
         const stats = userData.stats;
         
         this.elements.totalSolved.textContent = stats.totalSolved;
@@ -548,6 +574,11 @@ class DailyQuotePuzzle {
 
     updateCongratsStats() {
         const userData = this.loadUserData();
+        
+        // Recalculate streak and time to ensure accuracy
+        this.calculateCurrentStreak(userData);
+        this.updateTotalTimeAndAverage(userData);
+        
         const stats = userData.stats;
         
         document.getElementById('congratsTotalSolved').textContent = stats.totalSolved;
