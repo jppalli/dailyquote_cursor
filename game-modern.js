@@ -1795,31 +1795,7 @@ class DailyQuotePuzzle {
         return userData.puzzles[todayStr] !== undefined;
     }
 
-    replayChallenge() {
-        const today = new Date();
-        const todayStr = this.formatDate(today);
-        this.loadChallengeForDate(todayStr);
-        this.elements.congrats.classList.remove('show');
-        this.elements.calendarModal.style.display = 'none';
-        this.elements.calendarModal.style.display = 'flex';
-        this.renderCalendar();
-        this.updateDateDisplay();
-        this.renderInputArea();
-        this.startTime = new Date();
-        this.endTime = null;
-        this.gameTime = 0;
-        this.isUnscrambling = false;
-        this.elements.resetBtn.disabled = false;
-        this.elements.backspaceBtn.disabled = false;
-        this.elements.unscrambleBtn.disabled = false;
-        this.elements.unscrambleBtn.style.opacity = '1';
-        this.elements.unscrambleTimer.classList.remove('show');
-        this.elements.unscrambleTimer.textContent = '';
-        this.unscrambleCooldownInterval = null;
-        this.unscrambleLastUsed = 0;
-        this.checkUnscrambleCooldown();
-        this.playResetSound();
-    }
+    // replayChallenge method removed - no longer needed since completed challenges are view-only
 
     showPastChallenges() {
         const userData = this.loadUserData();
@@ -1846,7 +1822,7 @@ class DailyQuotePuzzle {
                     <div class="challenge-item" data-date="${date}">
                         <div class="challenge-date">${formattedDate}</div>
                         <div class="challenge-time">${puzzle.time}s</div>
-                        <button class="replay-btn" onclick="game.replayPastChallenge('${date}')">Replay</button>
+                        <div class="challenge-status">Completed</div>
                     </div>
                 `;
             });
@@ -1886,47 +1862,7 @@ class DailyQuotePuzzle {
         }
     }
 
-    replayPastChallenge(dateStr) {
-        this.loadChallengeForDate(dateStr);
-        this.closePastChallengesModal();
-        
-        // Reset game state for replay
-        this.gameComplete = false;
-        this.solvedWords = new Set();
-        this.authorSolved = false;
-        this.activeWord = null;
-        this.userInput = '';
-        this.availableLetters = [];
-        this.usedLetters = [];
-        this.startTime = new Date();
-        this.endTime = null;
-        this.gameTime = 0;
-        this.isUnscrambling = false;
-        
-        // Reset UI elements
-        this.elements.congrats.classList.remove('show');
-        this.elements.resetBtn.disabled = false;
-        this.elements.backspaceBtn.disabled = false;
-        this.elements.unscrambleBtn.disabled = false;
-        this.elements.unscrambleBtn.style.opacity = '1';
-        this.elements.unscrambleTimer.classList.remove('show');
-        this.elements.unscrambleTimer.textContent = '';
-        this.unscrambleCooldownInterval = null;
-        this.unscrambleLastUsed = 0;
-        
-        this.renderQuote();
-        this.updateDateDisplay();
-        this.renderInputArea();
-        this.checkUnscrambleCooldown();
-        this.playResetSound();
-        
-        // Auto-activate first word
-        if (this.currentQuote.scrambledWords.length > 0) {
-            setTimeout(() => {
-                this.handleWordClick(this.currentQuote.scrambledWords[0]);
-            }, 500);
-        }
-    }
+    // replayPastChallenge method removed - no longer needed since completed challenges are view-only
 }
 
 // Initialize the game when DOM is loaded
