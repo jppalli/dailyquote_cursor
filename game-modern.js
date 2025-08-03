@@ -1404,17 +1404,19 @@ class DailyQuotePuzzle {
             const puzzleData = userData.puzzles[dateStr];
             
             if (puzzleData && puzzleData.solved) {
-                // Quote is already completed, show completed state
+                // Quote is already completed, show completed state without updating stats
                 this.gameComplete = true;
                 this.solvedWords = new Set(puzzleData.solvedWords || []);
                 this.authorSolved = puzzleData.authorSolved || false;
                 this.gameTime = puzzleData.time || 0;
                 this.startTime = new Date(dateStr);
-                this.endTime = new Date();
+                this.endTime = new Date(dateStr); // Use original completion time
                 
                 this.renderQuote();
                 this.updateDateDisplay();
                 this.renderInputArea();
+                
+                // Show congrats with stats but don't update them
                 this.updateCongratsStats();
                 this.elements.congrats.classList.add('show');
                 
@@ -1423,6 +1425,9 @@ class DailyQuotePuzzle {
                 setTimeout(() => {
                     quoteContainer.classList.remove('puzzle-completed');
                 }, 1000);
+                
+                // Disable all interactive elements for completed challenges
+                this.disableInteractiveElements();
             } else {
                 // Quote is not completed, start fresh
                 this.solvedWords = new Set();
@@ -1439,6 +1444,9 @@ class DailyQuotePuzzle {
                 this.updateDateDisplay();
                 this.renderInputArea();
                 
+                // Enable interactive elements for new challenges
+                this.enableInteractiveElements();
+                
                 if (this.currentQuote.scrambledWords.length > 0) {
                     setTimeout(() => {
                         this.handleWordClick(this.currentQuote.scrambledWords[0]);
@@ -1446,6 +1454,48 @@ class DailyQuotePuzzle {
                 }
             }
         }
+    }
+
+    disableInteractiveElements() {
+        // Disable letter buttons
+        const letterButtons = document.querySelectorAll('.letter-btn');
+        letterButtons.forEach(btn => {
+            btn.style.pointerEvents = 'none';
+            btn.style.opacity = '0.6';
+        });
+        
+        // Disable control buttons
+        if (this.elements.resetBtn) this.elements.resetBtn.disabled = true;
+        if (this.elements.backspaceBtn) this.elements.backspaceBtn.disabled = true;
+        if (this.elements.unscrambleBtn) this.elements.unscrambleBtn.disabled = true;
+        
+        // Disable word clicking
+        const wordElements = document.querySelectorAll('.quote-word.scrambled, .author.scrambled');
+        wordElements.forEach(el => {
+            el.style.pointerEvents = 'none';
+            el.style.cursor = 'default';
+        });
+    }
+
+    enableInteractiveElements() {
+        // Enable letter buttons
+        const letterButtons = document.querySelectorAll('.letter-btn');
+        letterButtons.forEach(btn => {
+            btn.style.pointerEvents = 'auto';
+            btn.style.opacity = '1';
+        });
+        
+        // Enable control buttons
+        if (this.elements.resetBtn) this.elements.resetBtn.disabled = false;
+        if (this.elements.backspaceBtn) this.elements.backspaceBtn.disabled = false;
+        if (this.elements.unscrambleBtn) this.elements.unscrambleBtn.disabled = false;
+        
+        // Enable word clicking
+        const wordElements = document.querySelectorAll('.quote-word.scrambled, .author.scrambled');
+        wordElements.forEach(el => {
+            el.style.pointerEvents = 'auto';
+            el.style.cursor = 'pointer';
+        });
     }
     
     // Hamburger Menu Methods
@@ -1720,8 +1770,8 @@ class DailyQuotePuzzle {
             this.solvedWords = new Set(puzzleData.solvedWords || []);
             this.authorSolved = puzzleData.authorSolved || false;
             this.gameTime = puzzleData.time || 0;
-            this.startTime = new Date(todayStr); // Set start time to the date the puzzle was completed
-            this.endTime = new Date(); // Set end time to now
+            this.startTime = new Date(todayStr);
+            this.endTime = new Date(todayStr); // Use original completion time
 
             this.updateCongratsStats();
             this.elements.congrats.classList.add('show');
@@ -1733,7 +1783,8 @@ class DailyQuotePuzzle {
                 quoteContainer.classList.remove('puzzle-completed');
             }, 1000);
 
-            this.recordPuzzleCompletion(); // Still record completion for stats
+            // Disable interactive elements for completed challenges
+            this.disableInteractiveElements();
         }
     }
 
