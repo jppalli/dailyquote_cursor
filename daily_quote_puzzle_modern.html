@@ -359,16 +359,43 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
+            /* Improve touch targets */
+            min-height: 44px;
+            min-width: 44px;
+            /* Add touch feedback */
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            -webkit-user-select: none;
         }
 
         .letter-btn:not(.used):hover {
             background: #e0e0e0;
+            transform: scale(1.05);
+        }
+
+        .letter-btn:not(.used):active {
+            background: #d0d0d0;
+            transform: scale(0.95);
         }
 
         .letter-btn.used {
             background: #ddd;
             color: #888;
             cursor: default;
+            transform: scale(0.9);
+            opacity: 0.7;
+        }
+
+        /* Touch-specific improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .letter-btn:not(.used):hover {
+                transform: none;
+            }
+            
+            .letter-btn:not(.used):active {
+                background: #d0d0d0;
+                transform: scale(0.95);
+            }
         }
 
         .controls {
@@ -1172,7 +1199,17 @@
             .newspaper-container { padding: 20px; }
             .newspaper-title { font-size: 20px; }
             .quote-text { font-size: 20px; padding: 0 10px; }
-            .letter-btn, .letter-cell { width: 40px; height: 40px; font-size: 20px; }
+            .letter-btn, .letter-cell { 
+                width: 55px; 
+                height: 55px; 
+                font-size: 24px; 
+                margin: 5px;
+                border-radius: 8px;
+            }
+            .available-letters {
+                gap: 8px;
+                padding: 10px;
+            }
             .modal-content { width: 95%; padding: 20px; }
             .help-content li { padding-left: 20px; }
             .stats-grid { grid-template-columns: 1fr; }
@@ -1192,6 +1229,17 @@
 
         @media (max-width: 480px) {
             .newspaper-title { font-size: 18px; }
+            .letter-btn, .letter-cell { 
+                width: 60px; 
+                height: 60px; 
+                font-size: 26px; 
+                margin: 6px;
+                border-radius: 10px;
+            }
+            .available-letters {
+                gap: 6px;
+                padding: 15px;
+            }
             
             .slide-menu {
                 width: 85%;
@@ -1203,6 +1251,18 @@
         }
 
         @media (max-width: 400px) {
+            .letter-btn, .letter-cell { 
+                width: 65px; 
+                height: 65px; 
+                font-size: 28px; 
+                margin: 8px;
+                border-radius: 12px;
+            }
+            .available-letters {
+                gap: 4px;
+                padding: 20px;
+            }
+            
             .slide-menu {
                 width: 90%;
             }
