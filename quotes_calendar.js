@@ -28,7 +28,7 @@ const quotesCalendar = [
                 "index": 10
             }
         ],
-        "date": "2025-06-01"
+        "date": "2025-03-08"
     },
     {
         "text": "You must be the change you wish to see in the world.",
@@ -1767,29 +1767,29 @@ const quotesCalendar = [
         "date": "2025-08-01"
     },
     {
-        "text": "You don't have to be great to start, but you have to start to be great.",
-        "author": "Zig Ziglar",
-        "scrambledAuthor": "Zgi iZgrla",
+        "text": "Do one thing every day that scares you.",
+        "author": "Theodore Roosevelt",
+        "scrambledAuthor": "dhrTeoeo Rtvooesle",
         "scrambledWords": [
             {
-                "original": "great",
-                "scrambled": "graet",
-                "index": 5
+                "original": "one",
+                "scrambled": "noe",
+                "index": 1
             },
             {
-                "original": "start",
-                "scrambled": "artst",
-                "index": 7
+                "original": "thing",
+                "scrambled": "hgint",
+                "index": 2
             },
             {
-                "original": "start",
-                "scrambled": "tsrat",
-                "index": 7
+                "original": "day",
+                "scrambled": "yad",
+                "index": 4
             },
             {
-                "original": "great",
-                "scrambled": "egart",
-                "index": 5
+                "original": "scares",
+                "scrambled": "creass",
+                "index": 6
             }
         ],
         "date": "2025-08-03"
