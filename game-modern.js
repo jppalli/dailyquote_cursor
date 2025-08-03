@@ -1671,7 +1671,9 @@ class DailyQuotePuzzle {
         if (pastChallengesBtn) {
             pastChallengesBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                this.showPastChallenges();
+                this.elements.congrats.classList.remove('show');
+                this.elements.calendarModal.style.display = 'flex';
+                this.renderCalendar();
             });
         }
     }
