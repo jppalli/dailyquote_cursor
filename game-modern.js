@@ -96,7 +96,8 @@ class DailyQuotePuzzle {
             avgTime: document.getElementById('avgTime'),
             prevMonth: document.getElementById('prevMonth'),
             nextMonth: document.getElementById('nextMonth'),
-            calendarMonthYear: document.getElementById('calendarMonthYear')
+            calendarMonthYear: document.getElementById('calendarMonthYear'),
+            pastChallengesBtn: document.getElementById('pastChallengesBtn')
         };
         
         // Debug: Log missing elements
@@ -117,6 +118,10 @@ class DailyQuotePuzzle {
         await this.initializeSounds();
         this.loadSettings();
         this.loadUserData();
+        
+        // Check if today's quote is already completed
+        this.checkQuoteCompletionStatus();
+        
         this.renderQuote();
         this.updateDateDisplay();
         this.renderInputArea();
@@ -136,8 +141,8 @@ class DailyQuotePuzzle {
             settings: this.elements.settingsModal ? this.elements.settingsModal.style.display : 'element not found'
         });
         
-        // Auto-activate first word
-        if (this.currentQuote.scrambledWords.length > 0) {
+        // Auto-activate first word only if not already completed
+        if (!this.isQuoteCompleted() && this.currentQuote.scrambledWords.length > 0) {
             setTimeout(() => {
                 this.handleWordClick(this.currentQuote.scrambledWords[0]);
             }, 500);
@@ -497,7 +502,10 @@ class DailyQuotePuzzle {
         userData.puzzles[dateStr] = {
             solved: true,
             time: this.gameTime,
-            date: dateStr
+            date: dateStr,
+            solvedWords: Array.from(this.solvedWords),
+            authorSolved: this.authorSolved,
+            completedAt: new Date().toISOString()
         };
         
         userData.stats.totalSolved = Object.values(userData.puzzles).filter(p => p.solved).length;
@@ -1359,24 +1367,52 @@ class DailyQuotePuzzle {
         const quote = this.quotes.find(q => q.date === dateStr);
         if (quote) {
             this.currentQuote = quote;
-            this.solvedWords = new Set();
-            this.authorSolved = false;
-            this.activeWord = null;
-            this.userInput = '';
-            this.availableLetters = [];
-            this.usedLetters = [];
-            this.gameComplete = false;
-            this.startTime = new Date();
             
-            this.elements.congrats.classList.remove('show');
-            this.renderQuote();
-            this.updateDateDisplay();
-            this.renderInputArea();
+            // Check if this quote is already completed
+            const userData = this.loadUserData();
+            const puzzleData = userData.puzzles[dateStr];
             
-            if (this.currentQuote.scrambledWords.length > 0) {
+            if (puzzleData && puzzleData.solved) {
+                // Quote is already completed, show completed state
+                this.gameComplete = true;
+                this.solvedWords = new Set(puzzleData.solvedWords || []);
+                this.authorSolved = puzzleData.authorSolved || false;
+                this.gameTime = puzzleData.time || 0;
+                this.startTime = new Date(dateStr);
+                this.endTime = new Date();
+                
+                this.renderQuote();
+                this.updateDateDisplay();
+                this.renderInputArea();
+                this.updateCongratsStats();
+                this.elements.congrats.classList.add('show');
+                
+                const quoteContainer = document.querySelector('.quote-container');
+                quoteContainer.classList.add('puzzle-completed', 'quote-complete');
                 setTimeout(() => {
-                    this.handleWordClick(this.currentQuote.scrambledWords[0]);
-                }, 300);
+                    quoteContainer.classList.remove('puzzle-completed');
+                }, 1000);
+            } else {
+                // Quote is not completed, start fresh
+                this.solvedWords = new Set();
+                this.authorSolved = false;
+                this.activeWord = null;
+                this.userInput = '';
+                this.availableLetters = [];
+                this.usedLetters = [];
+                this.gameComplete = false;
+                this.startTime = new Date();
+                
+                this.elements.congrats.classList.remove('show');
+                this.renderQuote();
+                this.updateDateDisplay();
+                this.renderInputArea();
+                
+                if (this.currentQuote.scrambledWords.length > 0) {
+                    setTimeout(() => {
+                        this.handleWordClick(this.currentQuote.scrambledWords[0]);
+                    }, 300);
+                }
             }
         }
     }
@@ -1624,6 +1660,10 @@ class DailyQuotePuzzle {
             if (this.elements.settingsModal && e.target === this.elements.settingsModal) {
                 this.elements.settingsModal.style.display = 'none';
             }
+            const pastChallengesModal = document.getElementById('pastChallengesModal');
+            if (pastChallengesModal && e.target === pastChallengesModal) {
+                this.closePastChallengesModal();
+            }
         });
 
         // Past challenges button in congrats section
@@ -1631,10 +1671,176 @@ class DailyQuotePuzzle {
         if (pastChallengesBtn) {
             pastChallengesBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                this.elements.congrats.classList.remove('show');
-                this.elements.calendarModal.style.display = 'flex';
-                this.renderCalendar();
+                this.showPastChallenges();
             });
+        }
+    }
+
+    checkQuoteCompletionStatus() {
+        const today = new Date();
+        const todayStr = this.formatDate(today);
+        const userData = this.loadUserData();
+        const puzzleData = userData.puzzles[todayStr];
+
+        if (puzzleData) {
+            this.gameComplete = true;
+            this.solvedWords = new Set(puzzleData.solvedWords || []);
+            this.authorSolved = puzzleData.authorSolved || false;
+            this.gameTime = puzzleData.time || 0;
+            this.startTime = new Date(todayStr); // Set start time to the date the puzzle was completed
+            this.endTime = new Date(); // Set end time to now
+
+            this.updateCongratsStats();
+            this.elements.congrats.classList.add('show');
+            this.playQuoteCompleteSound();
+
+            const quoteContainer = document.querySelector('.quote-container');
+            quoteContainer.classList.add('puzzle-completed', 'quote-complete');
+            setTimeout(() => {
+                quoteContainer.classList.remove('puzzle-completed');
+            }, 1000);
+
+            this.recordPuzzleCompletion(); // Still record completion for stats
+        }
+    }
+
+    isQuoteCompleted() {
+        const today = new Date();
+        const todayStr = this.formatDate(today);
+        const userData = this.loadUserData();
+        return userData.puzzles[todayStr] !== undefined;
+    }
+
+    replayChallenge() {
+        const today = new Date();
+        const todayStr = this.formatDate(today);
+        this.loadChallengeForDate(todayStr);
+        this.elements.congrats.classList.remove('show');
+        this.elements.calendarModal.style.display = 'none';
+        this.elements.calendarModal.style.display = 'flex';
+        this.renderCalendar();
+        this.updateDateDisplay();
+        this.renderInputArea();
+        this.startTime = new Date();
+        this.endTime = null;
+        this.gameTime = 0;
+        this.isUnscrambling = false;
+        this.elements.resetBtn.disabled = false;
+        this.elements.backspaceBtn.disabled = false;
+        this.elements.unscrambleBtn.disabled = false;
+        this.elements.unscrambleBtn.style.opacity = '1';
+        this.elements.unscrambleTimer.classList.remove('show');
+        this.elements.unscrambleTimer.textContent = '';
+        this.unscrambleCooldownInterval = null;
+        this.unscrambleLastUsed = 0;
+        this.checkUnscrambleCooldown();
+        this.playResetSound();
+    }
+
+    showPastChallenges() {
+        const userData = this.loadUserData();
+        const completedPuzzles = Object.entries(userData.puzzles)
+            .filter(([date, puzzle]) => puzzle.solved)
+            .sort(([dateA], [dateB]) => new Date(dateB) - new Date(dateA));
+
+        let challengesHtml = '<div class="past-challenges-container">';
+        challengesHtml += '<h3>Past Challenges</h3>';
+        challengesHtml += '<div class="challenges-list">';
+
+        if (completedPuzzles.length === 0) {
+            challengesHtml += '<p>No completed challenges yet. Start solving today\'s puzzle!</p>';
+        } else {
+            completedPuzzles.forEach(([date, puzzle]) => {
+                const puzzleDate = new Date(date);
+                const formattedDate = puzzleDate.toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+                
+                challengesHtml += `
+                    <div class="challenge-item" data-date="${date}">
+                        <div class="challenge-date">${formattedDate}</div>
+                        <div class="challenge-time">${puzzle.time}s</div>
+                        <button class="replay-btn" onclick="game.replayPastChallenge('${date}')">Replay</button>
+                    </div>
+                `;
+            });
+        }
+
+        challengesHtml += '</div></div>';
+
+        // Create or update modal for past challenges
+        let modal = document.getElementById('pastChallengesModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'pastChallengesModal';
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Past Challenges</h2>
+                        <span class="close" onclick="game.closePastChallengesModal()">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        ${challengesHtml}
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        } else {
+            modal.querySelector('.modal-body').innerHTML = challengesHtml;
+        }
+
+        modal.style.display = 'flex';
+    }
+
+    closePastChallengesModal() {
+        const modal = document.getElementById('pastChallengesModal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    replayPastChallenge(dateStr) {
+        this.loadChallengeForDate(dateStr);
+        this.closePastChallengesModal();
+        
+        // Reset game state for replay
+        this.gameComplete = false;
+        this.solvedWords = new Set();
+        this.authorSolved = false;
+        this.activeWord = null;
+        this.userInput = '';
+        this.availableLetters = [];
+        this.usedLetters = [];
+        this.startTime = new Date();
+        this.endTime = null;
+        this.gameTime = 0;
+        this.isUnscrambling = false;
+        
+        // Reset UI elements
+        this.elements.congrats.classList.remove('show');
+        this.elements.resetBtn.disabled = false;
+        this.elements.backspaceBtn.disabled = false;
+        this.elements.unscrambleBtn.disabled = false;
+        this.elements.unscrambleBtn.style.opacity = '1';
+        this.elements.unscrambleTimer.classList.remove('show');
+        this.elements.unscrambleTimer.textContent = '';
+        this.unscrambleCooldownInterval = null;
+        this.unscrambleLastUsed = 0;
+        
+        this.renderQuote();
+        this.updateDateDisplay();
+        this.renderInputArea();
+        this.checkUnscrambleCooldown();
+        this.playResetSound();
+        
+        // Auto-activate first word
+        if (this.currentQuote.scrambledWords.length > 0) {
+            setTimeout(() => {
+                this.handleWordClick(this.currentQuote.scrambledWords[0]);
+            }, 500);
         }
     }
 }

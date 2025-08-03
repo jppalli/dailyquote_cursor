@@ -1736,7 +1736,7 @@ const quotesCalendar = [
                 "index": 11
             }
         ],
-        "date": "2025-08-01"
+        "date": "2025-08-02"
     },
     {
         "text": "The future starts today, not tomorrow.",
@@ -1764,7 +1764,7 @@ const quotesCalendar = [
                 "index": 5
             }
         ],
-        "date": "2025-08-02"
+        "date": "2025-08-01"
     },
     {
         "text": "You don't have to be great to start, but you have to start to be great.",
